@@ -59,3 +59,18 @@ button:hover {
   cursor: pointer;
 }
 
+/* Hides the arrow in most modern browsers */
+summary::marker {
+  content: "";
+  display: none;
+}
+
+/* Hides the arrow in Safari and older Chrome versions */
+summary::-webkit-details-marker {
+  display: none;
+}
+
+/* Optional: Ensure the summary behaves like a block for layout */
+summary {
+  list-style: none;
+}
