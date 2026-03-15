@@ -1,0 +1,61 @@
+@import "tailwindcss";
+
+@theme {
+    --font-redaction: "Redaction", sans-serif;
+}
+
+@custom-variant dark (&:where(.dark, .dark *));
+
+@font-face {
+  font-family: 'Redaction';
+  src: url('./fonts/Redaction/Redaction_50-Regular.woff2') format('woff2');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@layer components {
+  .About-wrapper {
+    @apply grid grid-cols-6 pt-0 sm:pt-5 h-[60vh] sm:h-[80vh] overflow-y-auto;
+    scrollbar-width: none; /* Firefox */
+  }
+  .About-wrapper::-webkit-scrollbar {
+  display: none; /* Chrome, Edge, Safari */
+  }
+  .InfoColumn-wrapper {
+    @apply col-span-1 break-words h-[80vh] overflow-y-auto;
+    scrollbar-width: none; /* Firefox */
+  }
+  .InfoColumn-wrapper::-webkit-scrollbar {
+    display: none; /* Chrome, Edge, Safari */
+  }
+  .ProjectOverview-wrapper {
+    @apply grid grid-cols-2 sm:grid-cols-5 gap-2 pt-1 pb-5;
+  }
+  .ProjectOverview-title {
+    @apply col-span-2 sm:col-span-1;
+  }
+  .ProjectOverview-tags {
+    @apply col-span-2 sm:col-span-1;
+  }
+  .ProjectDetails-wrapper {
+    @apply grid grid-cols-2 sm:grid-cols-5 gap-2;
+  }
+  .ProjectDetails-description {
+    @apply col-span-2 pb-5 sm:pb-0 sm:col-span-1;
+  }
+  .ProjectExtLinks-titles-wrapper {
+    @apply grid grid-cols-2 sm:grid-cols-5 gap-2;
+  }
+  .ProjectExtLinks-content-wrapper {
+    @apply grid grid-cols-2 sm:grid-cols-5 gap-2 pb-5;
+  }
+}
+
+a:hover {
+  text-decoration-line: underline;  
+}
+
+button:hover {
+  cursor: pointer;
+}
+

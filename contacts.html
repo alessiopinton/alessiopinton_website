@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alessio Pinton- Contacts</title>
+    
+
+    <!-- Tailwind darkmode user listener -->
+    <script>
+    if (
+        localStorage.getItem('theme') === 'dark' ||
+        (!localStorage.getItem('theme') &&
+        window.matchMedia('(prefers-color-scheme: dark)').matches)
+    ) {
+        document.documentElement.classList.add('dark')
+    } else {
+        document.documentElement.classList.remove('dark')
+        }
+    </script>
+
+    <!-- DEACTIVATED !NEEDS TO BE ACTIVATED BEFORE PUBLICATION! Desktop users redirection to homepage -->
+     <script>
+     //if (window.innerWidth >= 640) {
+        //window.location.href = "/index.html";
+        //}
+    </script>
+
+    <link rel="stylesheet" href="./css/output.css">
+</head>
+
+<body class="p-3 bg-white dark:bg-black text-black dark:text-white" style="font-family: Redaction;">
+
+    <!--HEADER-->
+    <header class="sticky grid grid-cols-3 sm:grid-cols-5 gap-1 text-xs">
+        <div class="col-span-5 sm:col-span-1 text-center sm:text-left py-5 sm:py-0">
+            <h1>
+                <a href="/index.html">ALESSIO PINTON</a>
+            </h1>
+        </div>
+        <div class="col-span-1 hidden sm:block"></div>
+        <div class="col-span-1 text-center">
+            <a href="/index.html">WORKS</a>
+        </div>
+        <div class="col-span-1">
+            <button id="aboutCheck" onclick="swapContent()" class="hidden sm:block">ABOUT</button>
+            <a href="/about.html" class="block sm:hidden text-center">ABOUT</a>
+        </div>
+        <div class="col-span-1 text-center sm:text-right">
+            <div class="hidden sm:block">
+                <a href="mailto:alessiopinton97@outlook.com" rel="mailto" class="hidden sm:inline-block truncate max-w-full">alessiopinton97@outlook.com</a>
+                <br>
+                <a href="https://www.instagram.com/pin_tuna/" class="hidden sm:inline">@pin_tuna</a>
+            </div>
+            <div class="block sm:hidden">
+                <a href="/contacts.html">CONTACTS</a>
+            </div>
+        </div>
+    </header>
+
+    <!--CONTENT-->
+    <section>
+        <div class="grid grid-cols-1 gap-2 pt-10 text-xs">
+            <div class="col-span-1">
+                <p>If you're interested to collaborate, have inquiries or just want to say hi - Send me an <a href="mailto:alessiopinton97@outlook.com" rel="mailto">email</a> or reach me on <a href="https://www.instagram.com/pin_tuna/">Instagram</a> or <a href="www.linkedin.com/in/alessio-pinton">Linkedin</a> ;;;P</p>
+                <br>
+                <br>
+                <p>CV and portfolio on request</p>
+                <br>
+                <br>
+            </div>
+            <div class="col-span-1">
+                <p>
+                    Email: <a href="mailto:alessiopinton97@outlook.com" rel="mailto">alessiopinton97@outlook.com</a><br>
+                    Instagram: <a href="https://www.instagram.com/pin_tuna/" target="_blank">@pin_tuna</a><br>
+                    Linkedin: <a href="https://www.linkedin.com/in/alessio-pinton" target="_blank">Alessio Pinton</a>
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!--FOOTER-->
+    <footer class="fixed bottom-3 w-full text-center text-xs">
+        <!--mobile-->
+        <div class="block sm:hidden">
+                <p>© 2026 Alessio Pinton</p>
+        </div>
+    </footer>
+
+
+</body>

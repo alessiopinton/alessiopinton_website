@@ -1,0 +1,1221 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alessio Pinton</title>
+    <meta name="description" content="Alessio Pinton is a new media artist and design researcher based in Rotterdam (NL). Working on - and with - procedural systems and performing machines, his practice is aimed at expanding human empathic perception towards other-than-living subjects. By elaborating natural phenomena and scientific theories that challenge the dichotomy between the organic and the inorganic, Alessio aims to contribute to a culture of the expanded self and self-recognition with the other.">
+
+    <!-- Tailwind darkmode user listener -->
+    <script>
+    if (
+        localStorage.getItem('theme') === 'dark' ||
+        (!localStorage.getItem('theme') &&
+        window.matchMedia('(prefers-color-scheme: dark)').matches)
+    ) {
+        document.documentElement.classList.add('dark')
+    } else {
+        document.documentElement.classList.remove('dark')
+        }
+</script>
+    <link rel="stylesheet" href="./css/output.css">
+</head>
+
+<body class="p-3 bg-white dark:bg-black text-black dark:text-white" style="font-family: Redaction;">
+    
+    <!--HEADER-->
+    <header class="sticky grid grid-cols-3 sm:grid-cols-5 gap-1 text-xs">
+        <div class="col-span-5 sm:col-span-1 text-center sm:text-left py-5 sm:py-0">
+            <h1>
+                <a href="/index.html">ALESSIO PINTON</a>
+            </h1>
+        </div>
+        <div class="col-span-1 hidden sm:block"></div>
+        <div class="col-span-1 text-center">
+            <a href="/index.html" class="block sm:hidden">WORKS</a>
+        </div>
+        <div class="col-span-1">
+            <button id="aboutCheck" onclick="swapContent()" class="hidden sm:block">ABOUT</button>
+            <a href="/about.html" class="block sm:hidden text-center">ABOUT</a>
+        </div>
+        <div class="col-span-1 text-center sm:text-right">
+            <div class="hidden sm:block">
+                <a href="mailto:alessiopinton97@outlook.com" rel="mailto" class="hidden sm:inline-block truncate max-w-full">alessiopinton97@outlook.com</a>
+                <br>
+                <a href="https://www.instagram.com/pin_tuna/" class="hidden sm:inline">@pin_tuna</a>
+            </div>
+            <div class="block sm:hidden">
+                <a href="/contacts.html">CONTACTS</a>
+            </div>
+        </div>
+    </header>
+    
+    <main>
+    <div class="py-5">
+    <!--ABOUT-->
+    <section class="About-wrapper" id="bio">
+        <div class="col-span-1 hidden sm:block"></div>
+        <div class="col-span-6 sm:col-span-4">
+            <p class="text-3xl sm:text-5xl text-center text-wrap "><br class="hidden sm:inline">Eyey, welcome to my digital realm <br>(∩｀-´)⊃━☆ﾟ.*・｡ﾟ𓆏<br><br>My name is Alessio and I am a digital artist and design researcher based between Rotterdam (NL) and Venice (IT).<br>As an avid explorer of digital technologies and a natural sciences enthusiast, my practice is located at the intersection of the virtual and physical worlds. My work spans 3D modelling and music production, but also material research to push the boundaries of digital fabrication and storytelling towards unknown lands. I hold a MA in Geo—Design at <a href="https://www.designacademy.nl/" target="_blank">Design Academy of Eindhoven</a> and a BA in Industrial Design and Multimedia at <a href="https://www5.iuav.it/homepage/index.htm" target="_blank">IUAV University of Venice</a>.</p>
+        </div>
+        <div class="col-span-1 hidden sm:block"></div>
+    </section>
+    <!--INFO-->
+    <section class="hidden grid grid-cols-5 gap-2 pt-1 text-xs" id="info">
+        <div class="InfoColumn-wrapper">
+            <p>If you’re interested to collaborate, have inquiries or just to want to say hi — Send me an <a href="mailto:alessiopinton97@outlook.com" rel="mailto">email</a> or reach me on <a href="https://www.instagram.com/pin_tuna/" target="_blank">Instagram</a> and <a href="https://www.linkedin.com/in/alessio-pinton" target="_blank">LinkedIn</a>!! ;;P<br><br>CV and portfolio on request</p>
+        </div>
+        <div class="InfoColumn-wrapper">
+            <p>JOB EXPERIENCES</p>
+            <br>
+            <p>2021-22<br>Concept developer/Research and Development Office at <a href="https://olderstudio.com/en/" target="_blank">OLDER</a>, Milan (IT)</p>
+            <br>
+            <p>2021<br>External rendering partner at <a href="https://www.fridle.it/Home/Home/" target="_blank">Fridle Group</a>, Vicenza (IT)</p>
+            <br>
+            <p>2020-21<br>Research and Development Office at <a href="https://flexlite.it/" target="_blank">Flexlite</a>, Venice (IT)</p>
+            <br>
+            <p>2019<br>Designer Assistant, <a href="https://www.alessandromasturzo.com/" target="_blank">Alessandro Masturzo Design Studio</a>, Venice (IT)</p>
+        </div>
+        <div class="InfoColumn-wrapper">
+            <p>EDUCATION</p>
+            <br>
+            <p>2022-24<br>MA Fine Arts and Design, GEODESIGN, <a href="https://www.designacademy.nl/" target="_blank">Design Academy Eindhoven</a> (NL)</p>
+            <br>
+            <p>2016-19<br>BA Industrial Design and Multimedia, <a href="https://www5.iuav.it/homepage/index.htm" target="_blank">IUAV University of Venice</a> (IT)</p>
+            <br>
+            <p>2011-16<br>Artistic Lyceum Diploma, <a href="https://www.liceoartisticotreviso.edu.it/" target="_blank">Liceo Artistico Statale di Treviso</a> (IT)</p>
+            <br>
+            <p>FELLOWSHIPS & RESIDENCIES</p>
+            <br>
+            <p>2025<br><a href="https://www.baltanlaboratories.org/library/raise-your-voice-2025-call-for-participants" target="_blank">RYV25 - The 21st Century Alchemist</a>, organized and sponsored by <a href="https://www.baltanlaboratories.org/" target="_blank">Baltan Laboratories</a> and <a href="https://chimericalintelligence.org/" target="_blank">Chimerical Intelligence Lab</a></p>
+            <br>
+            <p>WORKSHOPS</p>
+            <br>
+            <p>2024<br><i>Truth speaker workshop</i> with <a href="https://www.hilde-wollenstein.com/" target="_blank">Hilde Wollenstein</a> organized by <a href="https://www.instagram.com/sounddesignlab/" target="_blank">SoundDesign Lab</a>, <a href="https://www.designacademy.nl/" target="_blank">Design Academy Eindhoven</a> (NL)</p>
+            <br>
+            <p>2023<br><i>Real-Time Synthesis</i> with <a href="https://www.instagram.com/maxfrimout/" target="_blank">Max Frimout</a> organized by <a href="https://www.instagram.com/sounddesignlab/" target="_blank">SoundDesign Lab</a>, <a href="https://www.designacademy.nl/" target="_blank">Design Academy Eindhoven</a> (NL)</p>
+            <br>
+            <p>2019<br><i>Futuro Continuo: distretto commerciale riviera</i> with <a href="https://studiofmmilano.com/studio/" target="_blank">Sergio Menichelli</a> & Mayra Mocellin organized by <a href="https://www5.iuav.it/homepage/index.htm" target="_blank">IUAV University of Venice</a>, Venice (IT) </p>
+            <br>
+            <p>2018<br><i>Welcome Design Workshop 2018: green urban design</i> with <a href="https://www.alessandromasturzo.com/" target="_blank">Alessandro Masturzo</a> organized by <a href="https://www5.iuav.it/homepage/index.htm" target="_blank">IUAV University of Venice</a>, Venice (IT)</p>
+            <br>
+            <p>2018<br><i>To 2050: designing circular products</i> with <a href="https://www.tondo.tech/it/divulgazione-e-risorse/author/laura-badalucco/" target="_blank">Laura Badalucco</a> and Alessio Franconi organized by <a href="https://www5.iuav.it/homepage/index.htm" target="_blank">IUAV University of Venice</a>, Venice (IT)</p>
+        </div>
+        <div class="InfoColumn-wrapper">
+            <p>AWARDS</p>
+            <br>
+            <p>2025<br><a href="https://artoffice.info/kunstenaar/alessio-pinton/" target="_blank">Praktijkbijdrage for An Amalgam Loop</a>. Sponsored by <a href="https://artoffice.info/" target="_blank">Art Office, CBK Rotterdam</p>
+            <br>
+            <p>EXHIBITIONS & ARTICLES</p>
+            <br>
+            <p>2026<br><a href="https://www.thenewcurrent.org/26alessiopinton" target="_blank">The New Current 2026 - Connections</a>, Hunter Douglas fabriek, Rotterdam (NL). Organized by The New Current Rotterdam Art Week</p>
+            <br>
+            <p>2025<br><a href="https://murfmurw.com/en/index-en/" target="_blank">Murf/Murw Festival 2025</a>, Theater de Nieuwe Vorst, Tilburg (NL). Organized by Murf/Murw</p>
+            <br>
+            <p>2025<br><a href="https://eternalterraear.xyz/" target="_blank">MESOCOSM - Room as Policy Making</a>, BIOF Blue Institute of Futures, Milan (IT). Organized by Eternal Terra Ear</p>
+            <br>
+            <p>2025<br><a href="https://osservatoriomaree.it/an-amalgam-paradigm/" target="_blank">An Amalgam Paradigm. Atto I: Per la vitalità dell’inanimato</a>, OM Magazine, Paola (IT). Published by OSSERVATORIOMAREE</p>
+            <br>
+            <p>2025<br><a href="https://base.milano.it/en/making-kin/" target="_blank">We Will Design 2025 - Making Kin</a>, BASE Milano, Milan (IT). Organized by BASE Milano, Milan Design Week</p>
+            <br>
+            <p>2024<br><a href="https://www.umprum.cz/cs/web/o-umprum/kontakty/vystavni-oddeleni/beyond-design-frontiers" target="_blank">Beyond (Design) Frontiers</a>, UM Gallery, Prague (CZ) Organized by UMPRUM, Design Academy Eindhoven, Elisava School of Engineering, Konsfack</p>
+            <br>
+            <p>2024<br><a href="https://www.designacademy.nl/page/499/graduation-show-2024" target="_blank">Graduation Show 2024</a>, Microstad, Eindhoven (NL) Organized by Design Academy Eindhoven, Dutch Design Week</p>
+            <br>
+            <p>2024<br><a href="https://meltedfilm.xyz/" target="_blank">Melted Film Festival 24</a>, LAB-1, Eindhoven (NL). Organized by geo.frames, Future Number Five</p>
+        </div>
+        <div class="InfoColumn-wrapper">
+            <p>PRESS</p>
+            <br>
+            <p>2025</p>
+            <br>
+            <p>&#8599; <a href="https://www.elledecor.com/it/design/a64463243/fuorisalone-2025-base-tortona-we-will-design/" target="_blank">Fuorisalone 2025: le sperimentazioni di WE WILL DESIGN tornano al BASE in Tortona, ELLEDECOR.COM</a></p>
+            <br>
+            <p>&#8599; <a href="https://nookcollections.com.au/blogs/blog/fuorisalone-2025" target="_blank">From Salone to Fuorisalone 2025, NOOKCOLLECTIONS.COM.AU</a></p>
+            <br>
+            <p>&#8599; <a href="https://www.tpi.it/cultura/base-milano-we-will-design-performing-architecture-2025-202503281173528/" target="_blank">BASE Milano lancia We Will Design e Performing Architecture: “Così ci interroghiamo sui conflitti e le criticità che muovono la città”, TPI.IT</a></p>
+            <br>
+            <p>&#8599; <a href="https://www.io01umanesimotecnologico.it/approfondimenti/la-design-week-a-base-milano-2025-e-making-kin/" target="_blank">La Design Week a BASE Milano 2025 è MAKING KIN, IO01UMANESIMOTECNOLOGICO.IT</a></p>
+            <br>
+            <p>&#8599; <a href="https://www.mentelocale.it/milano/77827-we-will-design-making-kin-con-mostre-incontri-e-dj-set-milano-design-week-2025.htm" target="_blank">We Will Design: Making Kin, con mostre, incontri e dj-set - Milano Design Week 2025, MENTELOCALE.IT</a></p>
+            <br>
+            <p>2024</p>
+            <br>
+            <p>&#8599; <a href="https://www.designmag.cz/udalosti/123338-v-praze-vystavuji-talentovani-studenti-ze-ctyr-evropskych-vysokych-skol-celkem-vyraznych-16-projektu.html" target="_blank">Talented students from four European universities exhibit a total of 16 striking projects in Prague, DESIGNMAG.CZ</a></p>
+            <br>
+            <p>&#8599; <a href="https://www.earch.cz/revue/clanek/vystava-beyond-design-frontiers-predstavi-v-galerii-um-ukazku-tvorby-ctyr-vysokych-skol" target="_blank">Beyond (Design) Frontiers exhibition will present a sample of work from four universities at UM Gallery, EARCH.CZ</a></p>
+            <br>
+            <p>&#8599; <a href="https://dacistanbul.com/dutch-design-week-2024/" target="_blank">Dutch Design Week 2024, DACISTANBUL.COM</a></p>
+        </div>        
+    </section>
+    </div>
+
+    <!--PROJECTS-->
+    <section id="projects" class="text-xs">
+
+        <!--MURFMURW-->
+        <article>
+            <hr class="border-neutral-600">
+            <details>
+                <!--overview-->
+                <summary class="ProjectOverview-wrapper" style="cursor: pointer;">
+                    <div class="ProjectOverview-title">
+                        <h2>&#8600; MURF/MURW FESTIVAL 2025</h2>
+                    </div>
+                    <div class="ProjectOverview-tags">
+                        <P class="text-neutral-400">Interactive, Lecture, Performance, Sound</P>
+                    </div>
+                    <div class="col-span-1 hidden sm:block">
+                    </div>
+                    <div class="col-span-1">
+                        <P>FESTIVAL</P>
+                    </div>
+                    <div class="col-span-1">
+                        <P>2025</P>
+                    </div>
+                </summary>
+                <!--details-->
+                <div class="ProjectDetails-wrapper">
+                    <div class="col-span-1 hidden sm:block">
+                    </div>
+                    <div class="col-span-1 hidden sm:block">
+                    </div>
+                    <div class="ProjectDetails-description">
+                        <p>Amalgam Loop has been selected to participate in the 5th edition of the Murf/Murw Festival. Taking place in eight different locations throughout the centre of Tilburg, and bringing together musicians, performers and visual artists, Murf/Murw is a festival that reinterpret interdisciplinarity and experimental art as veichles of action (and reaction) to passive conformity.</p>
+                    </div>
+                    <div class="col-span-1">
+                        <p>Location<br>&#8618; Theater de Nieuwe Vorst, Willem II Straat 49, Tilburg (NL)<br><br></p>
+                        <p>Organizers<br>&#8618; <a href="https://murfmurw.com/en/index-en/" target="_blank">Murf/Murw Festival</a><br><br></p>
+                        <p>Sponsored by<br>&#8618; De Niewe Vorst, Gemeente Tilburg, het Cultuurfonds<br><br></p>
+                    </div>
+                    <div class="col-span-1">
+                        <p>Project supportes<br>&#8618; Art Office, CBK Rotterdam<br><br></p>
+                        <p>Curator<br>&#8618; Murf/Murw Festival<br><br></p>
+                        <p>Photo credits<br>&#8618; Heleen van Outheusden<br><br></p>
+                    </div>
+                </div>
+                <!--gallery-->
+                <div id="default-carousel" class="relative w-full w-3xl mx-auto py-3" data-carousel="slide" data-carousel-interval="3000">
+                    <div class="relative h-[70vh] overflow-hidden flex items-center justify-center">
+                        <!--pic-->
+                        <div class="ease-in-out duration-700 absolute inset-0 flex items-center justify-center bg-white dark:bg-black" data-carousel-item="active">
+                            <img src="./img/Murfmurw/murfmurw1.jpg" class="max-h-[70vh] w-auto object-contain mx-auto" alt="Image 1">
+                        </div>
+                        <!--pic-->
+                        <div class="hidden ease-in-out duration-700 absolute inset-0 flex items-center justify-center bg-white dark:bg-black" data-carousel-item>
+                            <img src="./img/Murfmurw/murfmurw2.jpg" class="max-h-[70vh] w-auto object-contain mx-auto" alt="Image 2">
+                        </div>
+                        <!--pic-->
+                        <div class="hidden ease-in-out duration-700 absolute inset-0 flex items-center justify-center bg-white dark:bg-black" data-carousel-item>
+                            <img src="./img/Murfmurw/murfmurw3.jpg" class="max-h-[70vh] w-auto object-contain mx-auto" alt="Image 3">
+                        </div>
+                    </div>
+                </div>
+                <!--external links-->
+                <div class="ProjectExtLinks-titles-wrapper">
+                    <div class="col-span-1 hidden sm:block">
+                    </div>
+                    <div class="col-span-1 hidden sm:block">
+                    </div>
+                    <div class="col-span-1 hidden sm:block">
+                    </div>
+                    <div class="col-span-1">
+                        <p>PRESS<br><br></p>
+                    </div>
+                    <div class="col-span-1">
+                        <p>EXTERNAL LINKS<br><br></p>
+                    </div>
+                </div>
+                <div class="ProjectExtLinks-content-wrapper">
+                    <div class="col-span-1 hidden sm:block">
+                    </div>
+                    <div class="col-span-1 hidden sm:block">
+                    </div>
+                    <div class="col-span-1 hidden sm:block">
+                    </div>
+                    <div class="col-span-1 text-wrap max-h-[30vh] overflow-y-auto [scrollbar-width:none] [&::-webkit-scrollbar]:hidden">
+                        <p>&#8599; <a href="https://tilburgwijzer.nl/evenement/an-amalgam-loop-alessio-pinton/" target="_blank">An Amalgam Loop - Murf/Murw x Theater de Nieuwe Vorst, TILBURGVIJZER.NL</a><br></p>
+                        <p>&#8599; <a href="https://www.wearepublic.nl/programma/murfmurw-festival-2025-vrijdag/211572" target="_blank">Murf/Murf - Polyphonic mix of performances and concerts, WEAREPUBLIC.NL</a></p>
+                    </div>
+                    <div class="col-span-1 text-wrap max-h-[30vh] overflow-y-auto [scrollbar-width:none] [&::-webkit-scrollbar]:hidden">
+                        <p>&#8599; <a href="https://base.milano.it/en/event/design-week-2025/" target="_blank">MURF/MURW 2025 LINEUP</a><br></p>
+                        <p>&#8599; <a href="https://base.milano.it/alessio-pinton-an-amalgam-loop/" target="_blank">AN AMALGAM LOOP, MURFMURW.COM</a><br></p>
+                        <p>&#8599; <a href="https://www.cavaromana.it/en/portfolios/an-amalgam-loop/" target="_blank">AN AMALGAM LOOP, ARTOFFICE.</a></p>
+                    </div>
+                </div>
+            </details>
+        </article>
+
+        <!--AN AMALGAM SIMULATION-->
+        <article>
+            <hr class="border-neutral-600">
+            <details>
+                <!--overview-->
+                <summary class="ProjectOverview-wrapper" style="cursor: pointer;">
+                    <div class="ProjectOverview-title">
+                        <h2>&#8600; AN AMALGAM SIMULATION</h2>
+                    </div>
+                    <div class="ProjectOverview-tags">
+                        <P class="text-neutral-400">3D, Moving Images, Sound</P>
+                    </div>
+                    <div class="col-span-1 hidden sm:block">
+                    </div>
+                    <div class="col-span-1">
+                        <P>VIDEO</P>
+                    </div>
+                    <div class="col-span-1">
+                        <P>2025</P>
+                    </div>
+                </summary>
+                <!--details-->
+                <div class="ProjectDetails-wrapper">
+                    <div class="col-span-1 hidden sm:block">
+                    </div>
+                    <div class="col-span-1 hidden sm:block">
+                    </div>
+                    <div class="ProjectDetails-description">
+                        <p>An Amalgam Simulation is a simulation/music performance inspired by the taxonomical transcendence of limestone. Through the use of RNGs for generative music and fluid-particle physics simulations, An Amalgam Simulation explores autonomous processes in sound and image, by coupling them with the emergent properties of geologic matter.</p>
+                    </div>
+                    <div class="col-span-1">
+                        <p>Components<br>&#8618; Rendering, Soundscape<br><br></p>
+                        <p>Softwares<br>&#8618; Blender, VCV Racks<br><br></p>
+                        <p>Support<br>&#8618; Ivan Brichese</p>
+                    </div>
+                    <div class="col-span-1">
+                        <p>Exhibitions<br>&#8618; MESOCOSM - Room as Policy Making, organized by Eternal Terra Ear at BIOF Blue Institute of Futures, Milan (IT)<br><br></p>
+                    </div>
+                </div>
+                <!--video-->
+                <div class="relative overflow-hidden flex items-center justify-center pt-3 pb-5">
+                    <iframe title="vimeo-player" src="https://player.vimeo.com/video/1116209977?h=9631230929" width="640" height="360" frameborder="0" referrerpolicy="strict-origin-when-cross-origin" allow="autoplay; fullscreen; picture-in-picture; clipboard-write; encrypted-media; web-share"   allowfullscreen></iframe>
+                </div>
+            </details>
+        </article>
+
+        <!--WE WILL DESIGN 2025-->
+        <article>
+            <hr class="border-neutral-600">
+            <details>
+                <!--overview-->
+                <summary class="ProjectOverview-wrapper" style="cursor: pointer;">
+                    <div class="ProjectOverview-title">
+                        <h2>&#8600; WE WILL DESIGN 2025 — MAKING KIN</h2>
+                    </div>
+                    <div class="ProjectOverview-tags">
+                        <P class="text-neutral-400">Interactive, Sound</P>
+                    </div>
+                    <div class="col-span-1 hidden sm:block">
+                    </div>
+                    <div class="col-span-1">
+                        <P>EXHIBITION</P>
+                    </div>
+                    <div class="col-span-1">
+                        <P>2025</P>
+                    </div>
+                </summary>
+                <!--details-->
+                <div class="ProjectDetails-wrapper">
+                    <div class="col-span-1 hidden sm:block">
+                    </div>
+                    <div class="col-span-1 hidden sm:block">
+                    </div>
+                    <div class="ProjectDetails-description">
+                        <p>In occasion of Milan Design Week ‘25, BASE has organized its fifth edition of the show <i>We Will Design</i>, under the theme <i>Making Kin</i>. By selecting 39 international emerging designers the exhibition rethink our bodies as shared, shifting states; knots within networks.<br> An Amalgam Loop and its narrative on the shifting states of matter has been invited to take part to the show by bringing a new collaboration with Cava Romana and Zenith C through the experimentation with Granitello di <i>Aurisina</i> stone.</p>
+                    </div>
+                    <div class="col-span-1">
+                        <p>Location<br>&#8618; Spazio BASE, V. Ambrogio Bergognone da Fossano 34, Milan, (IT)<br><br></p>
+                        <p>Organizers<br>&#8618; BASE Milano<br><br></p>
+                        <p>Sponsored by<br>&#8618; Milano Design Week, Ministero della Cultura, Regione Lombardia<br><br></p>
+                    </div>
+                    <div class="col-span-1">
+                        <p>Project sponsors<br>&#8618; Cava Romana, Zenith C<br><br></p>
+                        <p>Curator<br>&#8618; Base Milano<br><br></p>
+                    </div>
+                </div>
+                <!--gallery-->
+                <div id="default-carousel" class="relative w-full w-3xl mx-auto py-3" data-carousel="slide" data-carousel-interval="3000">
+                    <div class="relative h-[70vh] overflow-hidden flex items-center justify-center">
+                        <!--pic-->
+                        <div class="ease-in-out duration-700 absolute inset-0 flex items-center justify-center bg-white dark:bg-black" data-carousel-item="active">
+                            <img src="./img/WeWillDesign2025/WWD25_1.jpg" class="max-h-[70vh] w-auto object-contain mx-auto" alt="Image 1">
+                        </div>
+                        <!--pic-->
+                        <div class="hidden ease-in-out duration-700 absolute inset-0 flex items-center justify-center bg-white dark:bg-black" data-carousel-item>
+                            <img src="./img/WeWillDesign2025/WWD25_2.jpg" class="max-h-[70vh] w-auto object-contain mx-auto" alt="Image 2">
+                        </div>
+                        <!--pic-->
+                        <div class="hidden ease-in-out duration-700 absolute inset-0 flex items-center justify-center bg-white dark:bg-black" data-carousel-item>
+                            <img src="./img/WeWillDesign2025/WWD25_3.jpg" class="max-h-[70vh] w-auto object-contain mx-auto" alt="Image 3">
+                        </div>
+                    </div>
+                </div>
+                <!--external links-->
+                <div class="ProjectExtLinks-titles-wrapper">
+                    <div class="col-span-1 hidden sm:block">
+                    </div>
+                    <div class="col-span-1 hidden sm:block">
+                    </div>
+                    <div class="col-span-1 hidden sm:block">
+                    </div>
+                    <div class="col-span-1">
+                        <p>PRESS<br><br></p>
+                    </div>
+                    <div class="col-span-1">
+                        <p>EXTERNAL LINKS<br><br></p>
+                    </div>
+                </div>
+                <div class="ProjectExtLinks-content-wrapper">
+                    <div class="col-span-1 hidden sm:block">
+                    </div>
+                    <div class="col-span-1 hidden sm:block">
+                    </div>
+                    <div class="col-span-1 hidden sm:block">
+                    </div>
+                    <div class="col-span-1 text-wrap max-h-[30vh] overflow-y-auto [scrollbar-width:none] [&::-webkit-scrollbar]:hidden">
+                        <p>&#8599; <a href="https://www.elledecor.com/it/design/a64463243/fuorisalone-2025-base-tortona-we-will-design/" target="_blank">Fuorisalone 2025: le sperimentazioni di WE WILL DESIGN tornano al BASE in Tortona, ELLEDECOR.COM</a><br></p>
+                        <p>&#8599; <a href="https://nookcollections.com.au/blogs/blog/fuorisalone-2025" target="_blank">From Salone to Fuorisalone 2025, NOOKCOLLECTIONS.COM.AU</a></p>
+                        <p>&#8599; <a href="https://www.tpi.it/cultura/base-milano-we-will-design-performing-architecture-2025-202503281173528/" target="_blank">BASE Milano lancia We Will Design e Performing Architecture: “Così ci interroghiamo sui conflitti e le criticità che muovono la città”, TPI.IT</a></p>
+                        <p>&#8599; <a href="https://www.fuorisalone.it/it/magazine/focus/article/1660/making-kin-nuove-connessioni-base-milano-fuorisalone-2025" target="_blank">Making Kin: Nuove Connessioni a BASE Milano per il Fuorisalone 2025, FUORISALONE.IT</a></p>
+                        <p>&#8599; <a href="https://zero.eu/it/eventi/333458-we-will-design-making-kin,milano/" target="_blank">We Will Design: Making Kin, ZERO.EU</a></p>
+                        <p>&#8599; <a href="https://www.io01umanesimotecnologico.it/approfondimenti/la-design-week-a-base-milano-2025-e-making-kin/" target="_blank">La Design Week a BASE Milano 2025 è MAKING KIN, IO01UMANESIMOTECNOLOGICO.IT</a></p>
+                        <p>&#8599; <a href="https://www.mentelocale.it/milano/77827-we-will-design-making-kin-con-mostre-incontri-e-dj-set-milano-design-week-2025.htm" target="_blank">We Will Design: Making Kin, con mostre, incontri e dj-set - Milano Design Week 2025, MENTELOCALE.IT</a></p>
+                        <p>&#8599; <a href="https://www.internimagazine.it/approfondimenti/inchieste/cos-e-il-simbiocene-e-cosa-ci-ha-insegnato-la-design-week/" target="_blank">Siamo nell’era del Simbiocene: l’uomo è parte integrante di una rete complessa di relazioni, INTERNIMAGAZINE.IT</a></p>
+                        <p>&#8599; <a href="https://www.dximagazine.com/2025/04/07/base-milano-explorando-nuevas-formas-de-parentesco-mas-alla-de-los-limites-antropocentricos/" target="_blank">BASE MILANO. Explorando nuevas formas de parentesco más allá de los límites antropocéntricos, DXIMAGAZINE.COM</a></p>
+                        <p>&#8599; <a href="https://www.elledecor.com/it/design/a64463243/fuorisalone-2025-base-tortona-we-will-design/" target="_blank">Un viaggio alla scoperta delle nuove parentele: Making Kin, DESIGNERSPACE.IT</a></p>
+                        <p>&#8599; <a href="https://www.baunetz-campus.de/news/koexisitenz-von-mensch-natur-und-technologie-we-will-design-2025-9866010" target="_blank">Coexistence of humans, nature and technology: We Will Design 2025, BAUNETZ-CAMPUS.DE</a></p>
+                        <p>&#8599; <a href="https://living.corriere.it/salone-del-mobile/fuorisalone/card/fuorisalone-2025-cosa-fare-e-vedere-in-zona-tortona/?we-will-design-2025-da-base&id=8" target="_blank">Design democratico e scenografie pop: cosa vedere in Tortona durante il Fuorisalone, LIVING.CORRIERE.IT</a></p>
+                        <p>&#8599; <a href="https://www.stirworld.com/think-opinions-from-milan-to-london-global-design-weeks-as-barometers-and-battlegrounds" target="_blank">From Milan to London: Global design weeks as barometers and battlegrounds, STIRWORLD.COM</a></p>
+                        <p>&#8599; <a href="https://www.domusweb.it/it/eventi/salone-del-mobile/gallery/2025/fuorisalone-2025-cosa-vedere.html">Fuorisalone 2025. Cosa vedere e cosa non sapevamo di voler vedere, DOMUSWEB.IT</a></p>
+                        <p>&#8599; <a href="https://hestetika.art/we-will-design-2025-a-base-milano-il-design-come-pratica-di-parentela-multispecie/" target="_blank">We Will Design 2025: a BASE Milano il design come pratica di parentela multispecie, HESTETIKA.ART</a></p>
+                    </div>
+                    <div class="col-span-1 text-wrap max-h-[30vh] overflow-y-auto [scrollbar-width:none] [&::-webkit-scrollbar]:hidden">
+                        <p>&#8599; <a href="https://base.milano.it/en/event/design-week-2025/" target="_blank">WE WILL DESIGN 2025 - MAKING KIN OFFICIAL PAGE</a><br></p>
+                        <p>&#8599; <a href="https://base.milano.it/alessio-pinton-an-amalgam-loop/" target="_blank">AN AMALGAM LOOP, BASE.MILANO.IT</a><br></p>
+                        <p>&#8599; <a href="https://www.cavaromana.it/en/portfolios/an-amalgam-loop/" target="_blank">AN AMALGAM LOOP, CAVAROMANA.IT</a></p>
+                    </div>
+                </div>
+            </details>
+        </article>
+
+        <!--BEYOND DESIGN FRONTIERS-->
+        <article>
+            <hr class="border-neutral-600">
+            <details>
+                <!--overview-->
+                <summary class="ProjectOverview-wrapper" style="cursor: pointer;">
+                    <div class="ProjectOverview-title">
+                        <h2>&#8600; BEYOND (DESIGN) FRONTIERS</h2>
+                    </div>
+                    <div class="ProjectOverview-tags">
+                        <P class="text-neutral-400">Interactive, Sound</P>
+                    </div>
+                    <div class="col-span-1 hidden sm:block">
+                    </div>
+                    <div class="col-span-1">
+                        <P>EXHIBITION</P>
+                    </div>
+                    <div class="col-span-1">
+                        <P>2024-25</P>
+                    </div>
+                </summary>
+                <!--details-->
+                <div class="ProjectDetails-wrapper">
+                    <div class="col-span-1 hidden sm:block">
+                    </div>
+                    <div class="col-span-1 hidden sm:block">
+                    </div>
+                    <div class="ProjectDetails-description">
+                        <p>As a result of the collaboration between Design Academy Eindhoven, UMPRUM, Elisava School of Design and Engeneering and Konstfack, <i>Beyond (Design) Frontiers</i> is an exhibition intended to display the state of contemporary design education in Europe; mapping its patterns, urgencies and showcasing a shared commitment between institutuions.<br> <i>An Amalgam Loop</i> has been one of the 16 projects selected for the exhibition.</p>
+                    </div>
+                    <div class="col-span-1">
+                        <p>Location<br>&#8618; UM Gallery, UMPRUM, nám. Jana Palacha 80, Prague (CZ)<br><br></p>
+                        <p>Organizers<br>&#8618; UMPRUM, Elisava, DAE, Konstfack<br><br></p>
+                        <p>Sponsored by<br>&#8618; City of Prague, Artalk.cz<br><br></p>
+                    </div>
+                    <div class="col-span-1">
+                        <p>Curator<br>&#8618; Agáta Hošnová<br><br></p>
+                        <p>Photo credits<br>&#8618; Apolena Typltová<br><br></p>
+                    </div>
+                </div>
+                <!--gallery-->
+                <div id="default-carousel" class="relative w-full w-3xl mx-auto py-3" data-carousel="slide" data-carousel-interval="3000">
+                    <div class="relative h-[70vh] overflow-hidden flex items-center justify-center">
+                        <!--pic-->
+                        <div class="ease-in-out duration-700 absolute inset-0 flex items-center justify-center bg-white dark:bg-black" data-carousel-item="active">
+                            <img src="./img/BeyondDesignFrontiers/BeyondDesignFrontiers_1.jpg" class="max-h-[70vh] w-auto object-contain mx-auto" alt="Image 1">
+                        </div>
+                        <!--pic-->
+                        <div class="hidden ease-in-out duration-700 absolute inset-0 flex items-center justify-center bg-white dark:bg-black" data-carousel-item>
+                            <img src="./img/BeyondDesignFrontiers/BeyondDesignFrontiers_2.jpeg" class="max-h-[70vh] w-auto object-contain mx-auto" alt="Image 2">
+                        </div>
+                        <!--pic-->
+                        <div class="hidden ease-in-out duration-700 absolute inset-0 flex items-center justify-center bg-white dark:bg-black" data-carousel-item>
+                            <img src="./img/BeyondDesignFrontiers/BeyondDesignFrontiers_3.jpg" class="max-h-[70vh] w-auto object-contain mx-auto" alt="Image 3">
+                        </div>
+                        <div class="hidden ease-in-out duration-700 absolute inset-0 flex items-center justify-center bg-white dark:bg-black" data-carousel-item>
+                            <img src="./img/BeyondDesignFrontiers/BeyondDesignFrontiers_4.jpg" class="max-h-[70vh] w-auto object-contain mx-auto" alt="Image 3">
+                        </div>
+                    </div>
+                </div>
+                <!--external links-->
+                <div class="ProjectExtLinks-titles-wrapper">
+                    <div class="col-span-1 hidden sm:block">
+                    </div>
+                    <div class="col-span-1 hidden sm:block">
+                    </div>
+                    <div class="col-span-1 hidden sm:block">
+                    </div>
+                    <div class="col-span-1">
+                        <p>PRESS<br><br></p>
+                    </div>
+                    <div class="col-span-1">
+                        <p>EXTERNAL LINKS<br><br></p>
+                    </div>
+                </div>
+                <div class="ProjectExtLinks-content-wrapper">
+                    <div class="col-span-1 hidden sm:block">
+                    </div>
+                    <div class="col-span-1 hidden sm:block">
+                    </div>
+                    <div class="col-span-1 hidden sm:block">
+                    </div>
+                    <div class="col-span-1 text-wrap max-h-[30vh] overflow-y-auto [scrollbar-width:none] [&::-webkit-scrollbar]:hidden">
+                        <p>&#8599; <a href="https://www.czechdesign.cz/kalendar-akci/beyond-design-frontiers" target="_blank">Beyond (Design) Frontiers, CZECHDESIGN.CZ</a><br></p>
+                        <p>&#8599; <a href="https://www.earch.cz/revue/clanek/vystava-beyond-design-frontiers-predstavi-v-galerii-um-ukazku-tvorby-ctyr-vysokych-skol" target="_blank">Beyond (Design) Frontiers exhibition will present a sample of work from four universities at UM Gallery, EARCH.CZ</a></p>
+                        <p>&#8599; <a href="https://www.designmag.cz/udalosti/123338-v-praze-vystavuji-talentovani-studenti-ze-ctyr-evropskych-vysokych-skol-celkem-vyraznych-16-projektu.html" target="_blank">Talented students from four European universities exhibit a total of 16 striking projects in Prague, DESIGNMAG.CZ</a></p>
+                        <p>&#8599; <a href="https://art.ceskatelevize.cz/kulturni-prehled/beyond-design-frontiers/0CE9d" target="_blank">Beyond (Design) Frontiers, ART.CESKATELEVIZE.CZ</a></p>
+                        <p>&#8599; <a href="https://www.artmap.cz/beyond-design-frontiers/" target="_blank">Beyond (Design) Frontiers, ARTMAP.CZ</a></p>
+                    </div>
+                    <div class="col-span-1 text-wrap max-h-[30vh] overflow-y-auto [scrollbar-width:none] [&::-webkit-scrollbar]:hidden">
+                        <p>&#8599; <a href="https://www.umprum.cz/en/web/for-public/galleries/beyond-design-frontiers" target="_blank">BEYOND (DESIGN) FRONTIERS OFFICIAL PAGE</a><br></p>
+                        <p>&#8599; <a href="https://www.designacademy.nl/page/7820/dae-graduates-participate-in-beyond-design-frontiers-exhibition" target="_blank">DAE GRADUATES PARTICIPATE IN BEYOND DESIGN FRONTIERS EXHIBITION</a><br></p>
+                    </div>
+                </div>
+            </details>
+        </article>
+
+        <!--GRADUATION SHOW 2024-->
+        <article>
+            <hr class="border-neutral-600">
+            <details>
+                <!--overview-->
+                <summary class="ProjectOverview-wrapper" style="cursor: pointer;">
+                    <div class="ProjectOverview-title">
+                        <h2>&#8600; GRADUATION SHOW 2024</h2>
+                    </div>
+                    <div class="ProjectOverview-tags">
+                        <P class="text-neutral-400">Interactive, Sound</P>
+                    </div>
+                    <div class="col-span-1 hidden sm:block">
+                    </div>
+                    <div class="col-span-1">
+                        <P>EXHIBITION</P>
+                    </div>
+                    <div class="col-span-1">
+                        <P>2024</P>
+                    </div>
+                </summary>
+                <!--details-->
+                <div class="ProjectDetails-wrapper">
+                    <div class="col-span-1 hidden sm:block">
+                    </div>
+                    <div class="col-span-1 hidden sm:block">
+                    </div>
+                    <div class="ProjectDetails-description">
+                        <p>An Amalgam Loop has been presented during DDW24 at Design Academy Graduation Show. Placed in the basement of Microtuin, the project have been displayed alongside with the artworks from Lili Harather and Piet Schmidt. Also the thesis publication <i>An Amalgam Paradigm</i> have been presented at Graduation Show 2024, at the bookstore run by Limestone Books.</p>
+                    </div>
+                    <div class="col-span-1">
+                        <p>Location<br>&#8618; Microstad, Professor Dr Dorgelolaan 2, 5611 BA Eindhoven (NL)<br><br></p>
+                        <p>Organizers<br>&#8618; Design Academy Eindhoven<br><br></p>
+                        <p>Sponsored by<br>&#8618; Dutch Design Week, Municipality of Eindhoven</p>
+                    </div>
+                    <div class="col-span-1">
+                        <p>Curator<br>&#8618; Martina Muzi<br><br></p>
+                        <p>Photo credits<br>&#8618; Sofia Paz, Vincenzo Lapiccirella<br><br></p>
+                    </div>
+                </div>
+                <!--gallery-->
+                <div id="default-carousel" class="relative w-full 3xl mx-auto py-3" data-carousel="slide" data-carousel-interval="3000">
+                    <div class="relative h-[70vh] overflow-hidden flex items-center justify-center">
+                        <!--pic-->
+                        <div class="ease-in-out duration-700 absolute inset-0 flex items-center justify-center bg-white dark:bg-black" data-carousel-item="active">
+                            <img src="./img/GradShow24/GradShow24_1.jpg" class="max-h-[70vh] w-auto object-contain mx-auto" alt="Image 1">
+                        </div>
+                        <!--pic-->
+                        <div class="hidden ease-in-out duration-700 absolute inset-0 flex items-center justify-center bg-white dark:bg-black" data-carousel-item>
+                            <img src="./img/GradShow24/GradShow24_2.jpg" class="max-h-[70vh] w-auto object-contain mx-auto" alt="Image 2">
+                        </div>
+                        <!--pic-->
+                        <div class="hidden ease-in-out duration-700 absolute inset-0 flex items-center justify-center bg-white dark:bg-black" data-carousel-item>
+                            <img src="./img/GradShow24/GradShow24_3.jpg" class="max-h-[70vh] w-auto object-contain mx-auto" alt="Image 3">
+                        </div>
+                    </div>
+                </div>
+                <!--external links-->
+                <div class="ProjectExtLinks-titles-wrapper">
+                    <div class="col-span-1 hidden sm:block">
+                    </div>
+                    <div class="col-span-1 hidden sm:block">
+                    </div>
+                    <div class="col-span-1 hidden sm:block">
+                    </div>
+                    <div class="col-span-1">
+                        <p>PRESS<br><br></p>
+                    </div>
+                    <div class="col-span-1">
+                        <p>EXTERNAL LINKS<br><br></p>
+                    </div>
+                </div>
+                <div class="ProjectExtLinks-content-wrapper">
+                    <div class="col-span-1 hidden sm:block">
+                    </div>
+                    <div class="col-span-1 hidden sm:block">
+                    </div>
+                    <div class="col-span-1 hidden sm:block">
+                    </div>
+                    <div class="col-span-1 text-wrap max-h-[30vh] overflow-y-auto [scrollbar-width:none] [&::-webkit-scrollbar]:hidden">
+                        <p>&#8599; <a href="https://dacistanbul.com/dutch-design-week-2024/" target="_blank">Dutch Design Week 2024, DACISTANBUL.COM</a><br></p>
+                    </div>
+                    <div class="col-span-1 text-wrap max-h-[30vh] overflow-y-auto [scrollbar-width:none] [&::-webkit-scrollbar]:hidden">
+                        <p>&#8599; <a href="https://www.designacademy.nl/page/7666/recap-graduation-show-2024" target="_blank">RECAP: GRADUATION SHOW 2024</a><br></p>
+                    </div>
+                </div>
+            </details>
+        </article>
+
+        <!--MELTED FILM FESTIVAL 2024-->
+        <article>
+            <hr class="border-neutral-600">
+            <details>
+                <!--overview-->
+                <summary class="ProjectOverview-wrapper" style="cursor: pointer;">
+                    <div class="ProjectOverview-title">
+                        <h2>&#8600; MELTED FILM FESTIVAL 2024</h2>
+                    </div>
+                    <div class="ProjectOverview-tags">
+                        <P class="text-neutral-400">Moving Images</P>
+                    </div>
+                    <div class="col-span-1 hidden sm:block">
+                    </div>
+                    <div class="col-span-1">
+                        <P>FESTIVAL</P>
+                    </div>
+                    <div class="col-span-1">
+                        <P>2024</P>
+                    </div>
+                </summary>
+                <!--details-->
+                <div class="ProjectDetails-wrapper">
+                    <div class="col-span-1 hidden sm:block">
+                    </div>
+                    <div class="col-span-1 hidden sm:block">
+                    </div>
+                    <div class="ProjectDetails-description">
+                        <p>During DDW24, geo.frames and Future Number Five, in collaboration with LAB-1 organised Melted Film Festival 2024. In occasion of this festival dedicated to experimentation with moving images [...] prima di dormire was selected to be screened on the last of the four nights organised.</p>
+                    </div>
+                    <div class="col-span-1">
+                        <p>Location<br>&#8618; LAB-1, Keizersgracht 19, 5611 GC Eindhoven (NL)<br><br></p>
+                        <p>Organizers<br>&#8618; geo.frames, Future Number Five<br><br></p>
+                        <p>Sponsored by<br>&#8618; Design Academy Eindhoven, Dutch Design Week, Municipality of Eindhoven</p>
+                    </div>
+                    <div class="col-span-1">
+                        <p>Curator<br>&#8618; geo.frames, Future Number Five<br><br></p>
+                        <p>Photo credits<br>&#8618; Leidy Karina Gómez Montoya, Tonda Budzus</p>
+                    </div>
+                </div>
+                <!--gallery-->
+                <div id="default-carousel" class="relative w-full w-3xl mx-auto py-3" data-carousel="slide" data-carousel-interval="3000">
+                    <div class="relative h-[70vh] overflow-hidden flex items-center justify-center">
+                        <!--pic-->
+                        <div class="ease-in-out duration-700 absolute inset-0 flex items-center justify-center bg-white dark:bg-black" data-carousel-item="active">
+                            <img src="./img/MeltedFilmFestival24/MMF_1.jpg" class="max-h-[70vh] w-auto object-contain mx-auto" alt="Image 1">
+                        </div>
+                        <!--pic-->
+                        <div class="hidden ease-in-out duration-700 absolute inset-0 flex items-center justify-center bg-white dark:bg-black" data-carousel-item>
+                            <img src="./img/MeltedFilmFestival24/MMF_2.jpg" class="max-h-[70vh] w-auto object-contain mx-auto" alt="Image 2">
+                        </div>
+                        <!--pic-->
+                        <div class="hidden ease-in-out duration-700 absolute inset-0 flex items-center justify-center bg-white dark:bg-black" data-carousel-item>
+                            <img src="./img/MeltedFilmFestival24/MMF_3.jpg" class="max-h-[70vh] w-auto object-contain mx-auto" alt="Image 3">
+                        </div>
+                    </div>
+                </div>
+                <!--external links-->
+                <div class="ProjectExtLinks-titles-wrapper">
+                    <div class="col-span-1 hidden sm:block">
+                    </div>
+                    <div class="col-span-1 hidden sm:block">
+                    </div>
+                    <div class="col-span-1 hidden sm:block">
+                    </div>
+                    <div class="col-span-1">
+                    </div>
+                    <div class="col-span-1">
+                        <p>EXTERNAL LINKS<br><br></p>
+                    </div>
+                </div>
+                <div class="ProjectExtLinks-content-wrapper">
+                    <div class="col-span-1 hidden sm:block">
+                    </div>
+                    <div class="col-span-1 hidden sm:block">
+                    </div>
+                    <div class="col-span-1 hidden sm:block">
+                    </div>
+                    <div class="col-span-1 text-wrap max-h-[30vh] overflow-y-auto [scrollbar-width:none] [&::-webkit-scrollbar]:hidden">
+                    </div>
+                    <div class="col-span-1 text-wrap max-h-[30vh] overflow-y-auto [scrollbar-width:none] [&::-webkit-scrollbar]:hidden">
+                        <p>&#8599; <a href="https://vimeo.com/1042601105" target="_blank">WATCH [...] PRIMA DI DORMIRE MOVIE</a><br></p>
+                        <p>&#8599; <a href="https://meltedfilm.xyz/" target="_blank">MELTED FILM FESTIVAL 2024 OFFICIAL PAGE</a><br></p>
+                    </div>
+                </div>
+            </details>
+        </article>
+
+        <!--AN AMALGAM PARADIGM-->
+        <article>
+            <hr class="border-neutral-600">
+            <details>
+                <!--overview-->
+                <summary class="ProjectOverview-wrapper" style="cursor: pointer;">
+                    <div class="ProjectOverview-title">
+                        <h2>&#8600; AN AMALGAM PARADIGM</h2>
+                    </div>
+                    <div class="ProjectOverview-tags">
+                        <P class="text-neutral-400">Editorial, Graphic</P>
+                    </div>
+                    <div class="col-span-1 hidden sm:block">
+                    </div>
+                    <div class="col-span-1">
+                        <P>PUBLICATION</P>
+                    </div>
+                    <div class="col-span-1">
+                        <P>2024</P>
+                    </div>
+                </summary>
+                <!--details-->
+                <div class="ProjectDetails-wrapper">
+                    <div class="col-span-1 hidden sm:block">
+                    </div>
+                    <div class="col-span-1 hidden sm:block">
+                    </div>
+                    <div class="ProjectDetails-description">
+                        <p>An interdisciplinary cluster, a process of sedimentation, but also an aggregate with emergent properties - An Amalgam Paradigm is a publication that traces in the boundaries between disciplines the unearthed potential for new ways of understanding the world. In exposing a hierarchical system of understanding reality, the writing proposes a systemic and empathic vision to living and non-living entities.</p>
+                    </div>
+                    <div class="col-span-1">
+                        <p>Venues<br>&#8618; NAi Booksellers, Nieuwe Instituut, Museumpark 25, 3015 CB Rotterdam (NL)<br>&#8618; We Will Design 2025 — Making Kin, Spazio BASE, Milan (IT)<br>&#8618; Limestone Bookstore Temporary Bookshop, Graduation Show ‘24, Microstad, Eindhoven (NL)</p>
+                    </div>
+                    <div class="col-span-1">
+                        <p>Articles<br>&#8618; An Amalgam Paradigm. Atto I: Per la vitalità dell’inanimato, OM Magazine, Paola (IT). Published by OSSERVATORIOMAREE<br><br></p>
+                        <p>Mentoring<br>&#8618; Geo-Design Department, Metahaven</p>
+                        <p>Thesis supervisors<br>&#8618; Ben Shai van der Wal, Nadine Botha</p>
+                    </div>
+                </div>
+                <!--gallery-->
+                <div id="default-carousel" class="relative w-full w-3xl mx-auto py-3" data-carousel="slide" data-carousel-interval="3000">
+                    <div class="relative h-[70vh] overflow-hidden flex items-center justify-center">
+                        <!--pic-->
+                        <div class="ease-in-out duration-700 absolute inset-0 flex items-center justify-center bg-white dark:bg-black" data-carousel-item="active">
+                            <img src="./img/AnAmalgamParadigm/AnAmalgamParadigm_1.jpg" class="max-h-[70vh] w-auto object-contain mx-auto" alt="Image 1">
+                        </div>
+                        <!--pic-->
+                        <div class="hidden ease-in-out duration-700 absolute inset-0 flex items-center justify-center bg-white dark:bg-black" data-carousel-item>
+                            <img src="./img/AnAmalgamParadigm/AnAmalgamParadigm_2.jpg" class="max-h-[70vh] w-auto object-contain mx-auto" alt="Image 2">
+                        </div>
+                        <!--pic-->
+                        <div class="hidden ease-in-out duration-700 absolute inset-0 flex items-center justify-center bg-white dark:bg-black" data-carousel-item>
+                            <img src="./img/AnAmalgamParadigm/AnAmalgamParadigm_3.jpg" class="max-h-[70vh] w-auto object-contain mx-auto" alt="Image 3">
+                        </div>
+                    </div>
+                </div>
+                <!--external links-->
+                <div class="ProjectExtLinks-titles-wrapper">
+                    <div class="col-span-1 hidden sm:block">
+                    </div>
+                    <div class="col-span-1 hidden sm:block">
+                    </div>
+                    <div class="col-span-1 hidden sm:block">
+                    </div>
+                    <div class="col-span-1">
+                    </div>
+                    <div class="col-span-1">
+                        <p>EXTERNAL LINKS<br><br></p>
+                    </div>
+                </div>
+                <div class="ProjectExtLinks-content-wrapper">
+                    <div class="col-span-1 hidden sm:block">
+                    </div>
+                    <div class="col-span-1 hidden sm:block">
+                    </div>
+                    <div class="col-span-1 hidden sm:block">
+                    </div>
+                    <div class="col-span-1 text-wrap max-h-[30vh] overflow-y-auto [scrollbar-width:none] [&::-webkit-scrollbar]:hidden">
+                    </div>
+                    <div class="col-span-1 text-wrap max-h-[30vh] overflow-y-auto [scrollbar-width:none] [&::-webkit-scrollbar]:hidden">
+                        <p>&#8599; <a href="https://vimeo.com/1042601105" target="_blank">WATCH [...] PRIMA DI DORMIRE MOVIE</a><br></p>
+                        <p>&#8599; <a href="https://meltedfilm.xyz/" target="_blank">MELTED FILM FESTIVAL 2024 OFFICIAL PAGE</a><br></p>
+                    </div>
+                </div>
+            </details>
+        </article>
+
+        <!--AN AMALGAM LOOP-->
+        <article>
+            <hr class="border-neutral-600">
+            <details>
+                <!--overview-->
+                <summary class="ProjectOverview-wrapper" style="cursor: pointer;">
+                    <div class="ProjectOverview-title">
+                        <h2>&#8600; AN AMALGAM LOOP</h2>
+                    </div>
+                    <div class="ProjectOverview-tags">
+                        <P class="text-neutral-400">Interactive, Performance, Sound</P>
+                    </div>
+                    <div class="col-span-1 hidden sm:block">
+                    </div>
+                    <div class="col-span-1">
+                        <P>INSTALLATION</P>
+                    </div>
+                    <div class="col-span-1">
+                        <P>2024</P>
+                    </div>
+                </summary>
+                <!--details-->
+                <div class="ProjectDetails-wrapper">
+                    <div class="col-span-1 hidden sm:block">
+                    </div>
+                    <div class="col-span-1 hidden sm:block">
+                    </div>
+                    <div class="ProjectDetails-description">
+                        <p>By creating a self regulating system, <i>An Amalgam Loop</i> challanges the dichotomy between active and inert matter and brings the animacy of geologic entities between human perceptual thresholds. The project proposes a more empathic approach to inorganic matter challenging Western sciences analytical way of relating to it.</p>
+                    </div>
+                    <div class="col-span-1">
+                        <p>Components<br>&#8618; Limestone, aluminum, Arduino, transducer, LEDs<br><br></p>
+                        <p>Softwares<br>&#8618; Arduino IDE, VCV Racks<br><br></p>
+                        <p>Mentoring<br>&#8618; Geo-Design Department, Metahaven<br><br></p>
+                        <p>Photo credits<br>&#8618; Miguel Teodoro<br><br></p>
+                    </div>
+                    <div class="col-span-1">
+                        <p>Exhibitions<br>&#8618; The New Current 2026 — Connections, organized by The New Current and Rotterdam Art Week, Rotterdam (NL)<br>&#8618; Murf/Murw Festival 2025, organized by Murf/Murw, Tilburg (NL)<br>&#8618; We Will Design 2025 — Making Kin, organized by BASE Milano, Milan (IT)<br>&#8618; Beyond (Design) Frontiers, organized by UMPRUM at UMPRUM Gallery, Prague (CZ)<br>&#8618; Graduation Show ‘24, organized by Design Academy Eindhoven at Microstad, Eindhoven (NL)<br><br></p>
+                    </div>
+                </div>
+                <!--gallery-->
+                <div id="default-carousel" class="relative w-full w-3xl mx-auto py-3" data-carousel="slide" data-carousel-interval="3000">
+                    <div class="relative h-[70vh] overflow-hidden flex items-center justify-center">
+                        <!--pic-->
+                        <div class="ease-in-out duration-700 absolute inset-0 flex items-center justify-center bg-white dark:bg-black" data-carousel-item="active">
+                            <img src="./img/AnAmalgamLoop/AnAmalgamLoop_1.jpg" class="max-h-[70vh] w-auto object-contain mx-auto" alt="Image 1">
+                        </div>
+                        <!--pic-->
+                        <div class="hidden ease-in-out duration-700 absolute inset-0 flex items-center justify-center bg-white dark:bg-black" data-carousel-item>
+                            <img src="./img/AnAmalgamLoop/AnAmalgamLoop_2.jpg" class="max-h-[70vh] w-auto object-contain mx-auto" alt="Image 2">
+                        </div>
+                        <!--pic-->
+                        <div class="hidden ease-in-out duration-700 absolute inset-0 flex items-center justify-center bg-white dark:bg-black" data-carousel-item>
+                            <img src="./img/AnAmalgamLoop/AnAmalgamLoop_3.jpg" class="max-h-[70vh] w-auto object-contain mx-auto" alt="Image 3">
+                        </div>
+                    </div>
+                </div>
+                <!--external links-->
+                <div class="ProjectExtLinks-titles-wrapper">
+                    <div class="col-span-1 hidden sm:block">
+                    </div>
+                    <div class="col-span-1 hidden sm:block">
+                    </div>
+                    <div class="col-span-1 hidden sm:block">
+                    </div>
+                    <div class="col-span-1">
+                    </div>
+                    <div class="col-span-1">
+                        <p>EXTERNAL LINKS<br><br></p>
+                    </div>
+                </div>
+                <div class="ProjectExtLinks-content-wrapper">
+                    <div class="col-span-1 hidden sm:block">
+                    </div>
+                    <div class="col-span-1 hidden sm:block">
+                    </div>
+                    <div class="col-span-1 hidden sm:block">
+                    </div>
+                    <div class="col-span-1 text-wrap max-h-[30vh] overflow-y-auto [scrollbar-width:none] [&::-webkit-scrollbar]:hidden">
+                    </div>
+                    <div class="col-span-1 text-wrap max-h-[30vh] overflow-y-auto [scrollbar-width:none] [&::-webkit-scrollbar]:hidden">
+                        <p>&#8599; <a href="https://www.designacademy.nl/page/597/an-amalgam-loop" target="_blank">AN AMALGAM LOOP - DESIGN ACADEMY EINDHOVEN</a><br></p>
+                    </div>
+                </div>
+            </details>
+        </article>
+
+        <!--LANDSCAPE TRANSFER-->
+        <article>
+            <hr class="border-neutral-600">
+            <details>
+                <!--overview-->
+                <summary class="ProjectOverview-wrapper" style="cursor: pointer;">
+                    <div class="ProjectOverview-title">
+                        <h2>&#8600; LANDSCAPE TRANSFER</h2>
+                    </div>
+                    <div class="ProjectOverview-tags">
+                        <P class="text-neutral-400">Interactive, Performance, Sound</P>
+                    </div>
+                    <div class="col-span-1 hidden sm:block">
+                    </div>
+                    <div class="col-span-1">
+                        <P>INSTALLATION</P>
+                    </div>
+                    <div class="col-span-1">
+                        <P>2023</P>
+                    </div>
+                </summary>
+                <!--details-->
+                <div class="ProjectDetails-wrapper">
+                    <div class="col-span-1 hidden sm:block">
+                    </div>
+                    <div class="col-span-1 hidden sm:block">
+                    </div>
+                    <div class="ProjectDetails-description">
+                        <p>In the digital era, society's obsession with archiving data feeds a machine that transforms physical resources into digital memories. Landscape Transfer maps the metamorphosis of rare earths into virtual landscapes.</p>
+                    </div>
+                    <div class="col-span-1">
+                        <p>Components<br>&#8618; Moving Images, 3D mapping, 3D scanning, print on textile<br><br></p>
+                        <p>Software<br>&#8618; Blender, Adobe Premiere<br><br></p>
+                    </div>
+                    <div class="col-span-1">
+                        <p>Collaborators<br>&#8618; Ache Wang, Hancen Zhang<br><br></p>
+                        <p>Mentoring<br>&#8618; RNDR, Formafantasma<br><br></p>
+                    </div>
+                </div>
+                <!--gallery-->
+                <div id="default-carousel" class="relative w-full w-3xl mx-auto pt-3 pb-5" data-carousel="slide" data-carousel-interval="3000">
+                    <div class="relative h-[70vh] overflow-hidden flex items-center justify-center">
+                        <!--pic-->
+                        <div class="ease-in-out duration-700 absolute inset-0 flex items-center justify-center bg-white dark:bg-black" data-carousel-item="active">
+                            <img src="./img/LandscapeTransfer/LandscapeTransfer_1.jpg" class="max-h-[70vh] w-auto object-contain mx-auto" alt="Image 1">
+                        </div>
+                        <!--pic-->
+                        <div class="hidden ease-in-out duration-700 absolute inset-0 flex items-center justify-center bg-white dark:bg-black" data-carousel-item>
+                            <img src="./img/LandscapeTransfer/LandscapeTransfer_2.jpg" class="max-h-[70vh] w-auto object-contain mx-auto" alt="Image 2">
+                        </div>
+                        <!--pic-->
+                        <div class="hidden ease-in-out duration-700 absolute inset-0 flex items-center justify-center bg-white dark:bg-black" data-carousel-item>
+                            <img src="./img/LandscapeTransfer/LandscapeTransfer_3.jpg" class="max-h-[70vh] w-auto object-contain mx-auto" alt="Image 3">
+                        </div>
+                    </div>
+                </div>
+                </div>
+            </details>
+        </article>
+
+        <!--TRANSHABITAT-->
+        <article>
+            <hr class="border-neutral-600">
+            <details>
+                <!--overview-->
+                <summary class="ProjectOverview-wrapper" style="cursor: pointer;">
+                    <div class="ProjectOverview-title">
+                        <h2>&#8600; TRANSHABITAT</h2>
+                    </div>
+                    <div class="ProjectOverview-tags">
+                        <P class="text-neutral-400">3D, Moving Images, Sculpture</P>
+                    </div>
+                    <div class="col-span-1 hidden sm:block">
+                    </div>
+                    <div class="col-span-1">
+                        <P>INSTALLATION</P>
+                    </div>
+                    <div class="col-span-1">
+                        <P>2022-23</P>
+                    </div>
+                </summary>
+                <!--details-->
+                <div class="ProjectDetails-wrapper">
+                    <div class="col-span-1 hidden sm:block">
+                    </div>
+                    <div class="col-span-1 hidden sm:block">
+                    </div>
+                    <div class="ProjectDetails-description">
+                        <p>Transhabitat embodies a transformative exploration of the Venetian saltmarshes’ identity, aiming to establish a connection between human and ecological identity in order to evoke an ecosystem consciousness.  Drawing upon the notion of the idol as a medium the project bridges the gap between the individual and the collective consciousness embodied by the saltmarshes.</p>
+                    </div>
+                    <div class="col-span-1">
+                        <p>Components<br>&#8618; 3D printing, CNC, moving images<br><br></p>
+                        <p>Software<br>&#8618; Blender, PrusaSlicer, Midjourney<br><br></p>
+                    </div>
+                    <div class="col-span-1">
+                        <p>Collaborators<br>&#8618; Elena Zaghis, Matteo Volonterio<br><br></p>
+                        <p>Mentoring<br>&#8618; Angela Rui, Meredith Root-Bernstein, Formafantasma<br><br></p>
+                    </div>
+                </div>
+                <!--gallery-->
+                <div id="default-carousel" class="relative w-full w-3xl mx-auto pt-3 pb-5" data-carousel="slide" data-carousel-interval="3000">
+                    <div class="relative h-[70vh] overflow-hidden flex items-center justify-center">
+                        <!--pic-->
+                        <div class="ease-in-out duration-700 absolute inset-0 flex items-center justify-center bg-white dark:bg-black" data-carousel-item="active">
+                            <img src="./img/Transhabitat/Transhabitat_1.jpg" class="max-h-[70vh] w-auto object-contain mx-auto" alt="Image 1">
+                        </div>
+                        <!--pic-->
+                        <div class="hidden ease-in-out duration-700 absolute inset-0 flex items-center justify-center bg-white dark:bg-black" data-carousel-item>
+                            <img src="./img/Transhabitat/Transhabitat_2.jpg" class="max-h-[70vh] w-auto object-contain mx-auto" alt="Image 2">
+                        </div>
+                        <!--pic-->
+                        <div class="hidden ease-in-out duration-700 absolute inset-0 flex items-center justify-center bg-white dark:bg-black" data-carousel-item>
+                            <img src="./img/Transhabitat/Transhabitat_3.jpg" class="max-h-[70vh] w-auto object-contain mx-auto" alt="Image 3">
+                        </div>
+                    </div>
+                </div>
+                </div>
+            </details>
+        </article>
+
+        <!--PRIMA DI DORMIRE-->
+        <article>
+            <hr class="border-neutral-600">
+            <details>
+                <!--overview-->
+                <summary class="ProjectOverview-wrapper" style="cursor: pointer;">
+                    <div class="ProjectOverview-title">
+                        <h2>&#8600; [...] PRIMA DI DORMIRE</h2>
+                    </div>
+                    <div class="ProjectOverview-tags">
+                        <p class="text-neutral-400">Moving Images</p>
+                    </div>
+                    <div class="col-span-1 hidden sm:block">
+                    </div>
+                    <div class="col-span-1">
+                        <P>VIDEO</P>
+                    </div>
+                    <div class="col-span-1">
+                        <P>2022-23</P>
+                    </div>
+                </summary>
+                <!--details-->
+                <div class="ProjectDetails-wrapper">
+                    <div class="col-span-1 hidden sm:block">
+                    </div>
+                    <div class="col-span-1 hidden sm:block">
+                    </div>
+                    <div class="ProjectDetails-description">
+                        <p><i>[...] prima di dormire</i> is the name of an (almost) imageless movie; a movie projected with closed eyes, like the ones before sleeping. Offering an extract of the daily life in the Venetian province, this subtitles movie is a brief introspective journey intended to leave space for mental images.</p>
+                    </div>
+                    <div class="col-span-1">
+                        <p>Components<br>&#8618; Moving images, voiceover<br><br></p>
+                        <p>Softwares<br>&#8618; Adobe Premiere, Audacity<br><br></p>
+                    </div>
+                    <div class="col-span-1">
+                        <p>Exhibitions<br>&#8618; Melted Film Festival 2024, organized by geo.frames and Future Number Five at LAB-1, Eindhoven (NL)<br><br></p>
+                        <p>Mentoring<br>&#8618; Metahaven, Formafantasma</p>
+                    </div>
+                </div>
+                <!--video-->
+                <div class="relative overflow-hidden flex items-center justify-center pt-3 pb-5">
+                    <iframe title="vimeo-player" src="https://player.vimeo.com/video/1042601105?h=dae22828e3" width="640" height="360" frameborder="0" referrerpolicy="strict-origin-when-cross-origin" allow="autoplay; fullscreen; picture-in-picture; clipboard-write; encrypted-media; web-share"   allowfullscreen></iframe>
+                </div>
+            </details>
+        </article>
+
+        <!--FROM+TO THE LAGOON-->
+        <article>
+            <hr class="border-neutral-600">
+            <details>
+                <!--overview-->
+                <summary class="ProjectOverview-wrapper" style="cursor: pointer;">
+                    <div class="ProjectOverview-title">
+                        <h2>&#8600; FROM+TO THE LAGOON</h2>
+                    </div>
+                    <div class="ProjectOverview-tags">
+                        <P class="text-neutral-400">Material Research</P>
+                    </div>
+                    <div class="col-span-1 hidden sm:block">
+                    </div>
+                    <div class="col-span-1">
+                        <P>INSTALLATION</P>
+                    </div>
+                    <div class="col-span-1">
+                        <P>2022-23</P>
+                    </div>
+                </summary>
+                <!--details-->
+                <div class="ProjectDetails-wrapper">
+                    <div class="col-span-1 hidden sm:block">
+                    </div>
+                    <div class="col-span-1 hidden sm:block">
+                    </div>
+                    <div class="ProjectDetails-description">
+                        <p>From+to the Lagoon is an open-ended project that aims to create a vocabulary of democratic design experiments that can promote small scale marshlands protection. The project investigates possible preservation practices through the use of reeds and simple techniques like tatching.</p>
+                    </div>
+                    <div class="col-span-1">
+                        <p>Components<br>&#8618; Phragmites, tatching<br><br></p>
+                    </div>
+                    <div class="col-span-1">
+                        <p>Mentoring<br>&#8618; buro Belén, Formafantasma<br><br></p>
+                    </div>
+                </div>
+                <!--gallery-->
+                <div id="default-carousel" class="relative w-full w-3xl mx-auto pt-3 pb-5" data-carousel="slide" data-carousel-interval="3000">
+                    <div class="relative h-[70vh] overflow-hidden flex items-center justify-center">
+                        <!--pic-->
+                        <div class="ease-in-out duration-700 absolute inset-0 flex items-center justify-center bg-white dark:bg-black" data-carousel-item="active">
+                            <img src="./img/From+toTheLagoon/F+TTL_1.jpg" class="max-h-[70vh] w-auto object-contain mx-auto" alt="Image 1">
+                        </div>
+                        <!--pic-->
+                        <div class="hidden ease-in-out duration-700 absolute inset-0 flex items-center justify-center bg-white dark:bg-black" data-carousel-item>
+                            <img src="./img/From+toTheLagoon/F+TTL_2.jpg" class="max-h-[70vh] w-auto object-contain mx-auto" alt="Image 2">
+                        </div>
+                        <!--pic-->
+                        <div class="hidden ease-in-out duration-700 absolute inset-0 flex items-center justify-center bg-white dark:bg-black" data-carousel-item>
+                            <img src="./img/From+toTheLagoon/F+TTL_3.jpg" class="max-h-[70vh] w-auto object-contain mx-auto" alt="Image 3">
+                        </div>
+                        <!--pic-->
+                        <div class="hidden ease-in-out duration-700 absolute inset-0 flex items-center justify-center bg-white dark:bg-black" data-carousel-item>
+                            <img src="./img/From+toTheLagoon/F+TTL_4.jpg" class="max-h-[70vh] w-auto object-contain mx-auto" alt="Image 4">
+                        </div>
+                    </div>
+                </div>
+                </div>
+            </details>
+        </article>
+
+        <!--NARRATING THE CRACKS-->
+        <article>
+            <hr class="border-neutral-600">
+            <details>
+                <!--overview-->
+                <summary class="ProjectOverview-wrapper" style="cursor: pointer;">
+                    <div class="ProjectOverview-title">
+                        <h2>&#8600; NARRATING THE CRACKS</h2>
+                    </div>
+                    <div class="ProjectOverview-tags">
+                        <P class="text-neutral-400">3D, Moving Images</P>
+                    </div>
+                    <div class="col-span-1 hidden sm:block">
+                    </div>
+                    <div class="col-span-1">
+                        <P>VIDEO</P>
+                    </div>
+                    <div class="col-span-1">
+                        <P>2022</P>
+                    </div>
+                </summary>
+                <!--details-->
+                <div class="ProjectDetails-wrapper">
+                    <div class="col-span-1 hidden sm:block">
+                    </div>
+                    <div class="col-span-1 hidden sm:block">
+                    </div>
+                    <div class="ProjectDetails-description">
+                        <p>Using 3D scanning as a storytelling methodology Narrating the Cracks explores the political consequences of climate change in Trentino communities.</p>
+                    </div>
+                    <div class="col-span-1">
+                        <p>Components<br>&#8618; 3D scanning, procedural modelling<br><br></p>
+                        <p>Software<br>&#8618; Blender, Adobe Premiere, Zephyr 3D<br><br></p>
+                    </div>
+                    <div class="col-span-1">
+                        <p>Mentoring<br>&#8618; Bruno Alves de Almeida, Giuditta Vendrame, Jeroen van de Gruiter, Formafantasma<br><br></p>
+                    </div>
+                </div>
+                <!--gallery-->
+                <div id="default-carousel" class="relative w-full w-3xl mx-auto pt-3 pb-5" data-carousel="slide" data-carousel-interval="3000">
+                    <div class="relative h-[70vh] overflow-hidden flex items-center justify-center">
+                        <!--pic-->
+                        <div class="ease-in-out duration-700 absolute inset-0 flex items-center justify-center bg-white dark:bg-black" data-carousel-item="active">
+                            <img src="./img/NarratingTheCracks/NarratingTheCracks_1.gif" class="max-h-[70vh] w-auto object-contain mx-auto" alt="Image 1">
+                        </div>
+                        <!--pic-->
+                        <div class="hidden ease-in-out duration-700 absolute inset-0 flex items-center justify-center bg-white dark:bg-black" data-carousel-item>
+                            <img src="./img/NarratingTheCracks/NarratingTheCracks_2.gif" class="max-h-[70vh] w-auto object-contain mx-auto" alt="Image 2">
+                        </div>
+                    </div>
+                </div>
+            </details>
+        </article>
+    </section>
+    </main>
+
+    <!--FOOTER-->
+    <footer>
+        <!--desktop-->
+        <div class="hidden sm:block text-xs">
+            <div class="pt-10 grid grid-cols-5 gap-1">
+                <div class="col-span-1">
+                    <p>© 2025 Alessio Pinton</p>
+                </div>
+                <div class="col-span-1"></div>
+                <div class="col-span-1"></div>
+                <div class="col-span-1">
+                    <a href="mailto:alessiopinton97@outlook.com" rel="mailto">alessiopinton97@outlook.com</a>
+                </div>
+                <div class="col-span-1 text-right">
+                    <button class="theme-toggle">SWITCH MODE</button>
+                </div>
+            </div>
+        </div>
+        <!--mobile-->
+        <div class="block sm:hidden text-xs">
+            <hr class="border-neutral-600">
+            <div class="grid grid-cols-2 py-3">
+                <div class="col-span-1 text-left">
+                    <button class="theme-toggle">SWITCH MODE</button>
+                </div>
+                <div class="col-span-1 text-right">
+                    <p>Send me an <a href="mailto:alessiopinton97@outlook.com" rel="mailto">email</a> or reach me on <a href="https://www.instagram.com/pin_tuna/">Instagram</a> or <a href="https://www.linkedin.com/in/alessio-pinton">Linkedin</a> ;;;P</p>
+                </div>
+            </div>
+            <div class="block sm:hidden text-center">
+                <p>© 2026 Alessio Pinton</p>
+            </div>
+        </div>
+    </footer>
+        
+
+    <!--SCRIPT-->
+    
+    <!-- Flowbite JS -->
+     <script src="https://unpkg.com/flowbite@latest/dist/flowbite.min.js"></script>
+     
+     <!--About/Info toggle-->
+     <script>
+     function swapContent() {
+        const btn = document.getElementById("aboutCheck");
+        const content1 = document.getElementById("bio");
+        const content2 = document.getElementById("info");
+        
+        // Scambia la visibilità usando la classe 'hidden' di Tailwind
+        content1.classList.toggle("hidden");
+        content2.classList.toggle("hidden");
+        // Cambia il testo del pulsante
+        btn.innerText = (btn.innerText === "INFO") ? "ABOUT" : "INFO";
+    }
+    </script>
+    
+    <!--Dark/Light mode toggle-->
+    <script>
+    const buttons = document.querySelectorAll('.theme-toggle')
+    
+    function updateButtons() {
+        buttons.forEach(btn => {
+            if (document.documentElement.classList.contains("dark")) {
+                btn.textContent = "LIGHT MODE"
+            } else {
+                btn.textContent = "DARK MODE"
+            }
+        })
+    }
+
+    updateButtons()
+
+    buttons.forEach(btn => {
+        btn.addEventListener("click", () =>{
+            document.documentElement.classList.toggle("dark")
+            
+            if (document.documentElement.classList.contains("dark")) {
+                localStorage.setItem("theme", "dark")
+            } else {
+                localStorage.setItem("theme", "light")
+            }
+            
+            updateButtons()
+        })
+    })
+    
+    </script>
+
+</body>
+</html>

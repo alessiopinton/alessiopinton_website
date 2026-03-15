@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alessio Pinton - About</title>
+    
+
+    <!-- Tailwind darkmode user listener -->
+    <script>
+    if (
+        localStorage.getItem('theme') === 'dark' ||
+        (!localStorage.getItem('theme') &&
+        window.matchMedia('(prefers-color-scheme: dark)').matches)
+    ) {
+        document.documentElement.classList.add('dark')
+    } else {
+        document.documentElement.classList.remove('dark')
+        }
+    </script>
+
+    <!-- DEACTIVATED !NEEDS TO BE ACTIVATED BEFORE PUBLICATION! Desktop users redirection to homepage -->
+     <script>
+     //if (window.innerWidth >= 640) {
+        //window.location.href = "/index.html";
+        //}
+    </script>
+
+    <link rel="stylesheet" href="./css/output.css">
+</head>
+
+<body class="p-3 bg-white dark:bg-black text-black dark:text-white" style="font-family: Redaction;">
+
+    <!--HEADER-->
+    <header class="sticky grid grid-cols-3 sm:grid-cols-5 gap-1 text-xs">
+        <div class="col-span-5 sm:col-span-1 text-center sm:text-left py-5 sm:py-0">
+            <h1>
+                <a href="/index.html">ALESSIO PINTON</a>
+            </h1>
+        </div>
+        <div class="col-span-1 hidden sm:block"></div>
+        <div class="col-span-1 text-center">
+            <a href="/index.html">WORKS</a>
+        </div>
+        <div class="col-span-1">
+            <button id="aboutCheck" onclick="swapContent()" class="hidden sm:block">ABOUT</button>
+            <a href="/about.html" class="block sm:hidden text-center">ABOUT</a>
+        </div>
+        <div class="col-span-1 text-center sm:text-right">
+            <div class="hidden sm:block">
+                <a href="mailto:alessiopinton97@outlook.com" rel="mailto" class="hidden sm:inline-block truncate max-w-full">alessiopinton97@outlook.com</a>
+                <br>
+                <a href="https://www.instagram.com/pin_tuna/" class="hidden sm:inline">@pin_tuna</a>
+            </div>
+            <div class="block sm:hidden">
+                <a href="/contacts.html">CONTACTS</a>
+            </div>
+        </div>
+    </header>
+
+    <!--CONTENT-->
+    <section>
+        <div class="grid grid-cols-2 gap-2 pt-10 pb-5 text-xs">
+            <div class="InfoColumn-wrapper">
+                <p>JOB EXPERIENCES</p>
+                <br>
+                <p>2021-22<br>Concept developer/Research and Development Office at <a href="https://olderstudio.com/en/" target="_blank">OLDER</a>, Milan (IT)</p>
+                <br>
+                <p>2021<br>External rendering partner at <a href="https://www.fridle.it/Home/Home/" target="_blank">Fridle Group</a>, Vicenza (IT)</p>
+                <br>
+                <p>2020-21<br>Research and Development Office at <a href="https://flexlite.it/" target="_blank">Flexlite</a>, Venice (IT)</p>
+                <br>
+                <p>2019<br>Designer Assistant, <a href="https://www.alessandromasturzo.com/" target="_blank">Alessandro Masturzo Design Studio</a>, Venice (IT)</p>
+                <br>
+                <p>EDUCATION</p>
+                <br>
+                <p>2022-24<br>MA Fine Arts and Design, GEODESIGN, <a href="https://www.designacademy.nl/" target="_blank">Design Academy Eindhoven</a> (NL)</p>
+                <br>
+                <p>2016-19<br>BA Industrial Design and Multimedia, <a href="https://www5.iuav.it/homepage/index.htm" target="_blank">IUAV University of Venice</a> (IT)</p>
+                <br>
+                <p>2011-16<br>Artistic Lyceum Diploma, <a href="https://www.liceoartisticotreviso.edu.it/" target="_blank">Liceo Artistico Statale di Treviso</a> (IT)</p>
+                <br>
+                <p>FELLOWSHIPS & RESIDENCIES</p>
+                <br>
+                <p>2025<br><a href="https://www.baltanlaboratories.org/library/raise-your-voice-2025-call-for-participants" target="_blank">RYV25 - The 21st Century Alchemist</a>, organized and sponsored by <a href="https://www.baltanlaboratories.org/" target="_blank">Baltan Laboratories</a> and <a href="https://chimericalintelligence.org/" target="_blank">Chimerical Intelligence Lab</a></p>
+                <br>
+                <p>WORKSHOPS</p>
+                <br>
+                <p>2024<br><i>Truth speaker workshop</i> with <a href="https://www.hilde-wollenstein.com/" target="_blank">Hilde Wollenstein</a> organized by <a href="https://www.instagram.com/sounddesignlab/" target="_blank">SoundDesign Lab</a>, <a href="https://www.designacademy.nl/" target="_blank">Design Academy Eindhoven</a> (NL)</p>
+                <br>
+                <p>2023<br><i>Real-Time Synthesis</i> with <a href="https://www.instagram.com/maxfrimout/" target="_blank">Max Frimout</a> organized by <a href="https://www.instagram.com/sounddesignlab/" target="_blank">SoundDesign Lab</a>, <a href="https://www.designacademy.nl/" target="_blank">Design Academy Eindhoven</a> (NL)</p>
+                <br>
+                <p>2019<br><i>Futuro Continuo: distretto commerciale riviera</i> with <a href="https://studiofmmilano.com/studio/" target="_blank">Sergio Menichelli</a> & Mayra Mocellin organized by <a href="https://www5.iuav.it/homepage/index.htm" target="_blank">IUAV University of Venice</a>, Venice (IT) </p>
+                <br>
+                <p>2018<br><i>Welcome Design Workshop 2018: green urban design</i> with <a href="https://www.alessandromasturzo.com/" target="_blank">Alessandro Masturzo</a> organized by <a href="https://www5.iuav.it/homepage/index.htm" target="_blank">IUAV University of Venice</a>, Venice (IT)</p>
+                <br>
+                <p>2018<br><i>To 2050: designing circular products</i> with <a href="https://www.tondo.tech/it/divulgazione-e-risorse/author/laura-badalucco/" target="_blank">Laura Badalucco</a> and Alessio Franconi organized by <a href="https://www5.iuav.it/homepage/index.htm" target="_blank">IUAV University of Venice</a>, Venice (IT)</p>
+            </div>
+            <div class="InfoColumn-wrapper">
+                <p>AWARDS</p>
+                <br>
+                <p>2025<br><a href="https://artoffice.info/kunstenaar/alessio-pinton/" target="_blank">Praktijkbijdrage for An Amalgam Loop</a>. Sponsored by <a href="https://artoffice.info/" target="_blank">Art Office, CBK Rotterdam</p>
+                <br>
+                <p>EXHIBITIONS & ARTICLES</p>
+                <br>
+                <p>2026<br><a href="https://www.thenewcurrent.org/26alessiopinton" target="_blank">The New Current 2026 - Connections</a>, Hunter Douglas fabriek, Rotterdam (NL). Organized by The New Current Rotterdam Art Week</p>
+                <br>
+                <p>2025<br><a href="https://murfmurw.com/en/index-en/" target="_blank">Murf/Murw Festival 2025</a>, Theater de Nieuwe Vorst, Tilburg (NL). Organized by Murf/Murw</p>
+                <br>
+                <p>2025<br><a href="https://eternalterraear.xyz/" target="_blank">MESOCOSM - Room as Policy Making</a>, BIOF Blue Institute of Futures, Milan (IT). Organized by Eternal Terra Ear</p>
+                <br>
+                <p>2025<br><a href="https://osservatoriomaree.it/an-amalgam-paradigm/" target="_blank">An Amalgam Paradigm. Atto I: Per la vitalità dell’inanimato</a>, OM Magazine, Paola (IT). Published by OSSERVATORIOMAREE</p>
+                <br>
+                <p>2025<br><a href="https://base.milano.it/en/making-kin/" target="_blank">We Will Design 2025 - Making Kin</a>, BASE Milano, Milan (IT). Organized by BASE Milano, Milan Design Week</p>
+                <br>
+                <p>2024<br><a href="https://www.umprum.cz/cs/web/o-umprum/kontakty/vystavni-oddeleni/beyond-design-frontiers" target="_blank">Beyond (Design) Frontiers</a>, UM Gallery, Prague (CZ) Organized by UMPRUM, Design Academy Eindhoven, Elisava School of Engineering, Konsfack</p>
+                <br>
+                <p>2024<br><a href="https://www.designacademy.nl/page/499/graduation-show-2024" target="_blank">Graduation Show 2024</a>, Microstad, Eindhoven (NL) Organized by Design Academy Eindhoven, Dutch Design Week</p>
+                <br>
+                <p>2024<br><a href="https://meltedfilm.xyz/" target="_blank">Melted Film Festival 24</a>, LAB-1, Eindhoven (NL). Organized by geo.frames, Future Number Five</p>
+            </div>
+        </div>
+    </section>
+
+    <!--FOOTER-->
+    <footer class="text-xs">
+        <!--desktop-->
+        <div class="hidden sm:block">
+            <div class="pt-10 grid grid-cols-5 gap-1">
+                <div class="col-span-1">
+                    <p>© 2025 Alessio Pinton</p>
+                </div>
+                <div class="col-span-1"></div>
+                <div class="col-span-1"></div>
+                <div class="col-span-1">
+                    <a href="mailto:alessiopinton97@outlook.com" rel="mailto">alessiopinton97@outlook.com</a>
+                </div>
+                <div class="col-span-1 text-right">
+                    <button class="theme-toggle">SWITCH MODE</button>
+                </div>
+            </div>
+        </div>
+        <!--mobile-->
+        <div class="block sm:hidden">
+            <hr class="border-neutral-600">
+            <div class="grid grid-cols-2 py-3">
+                <div class="col-span-1 text-left">
+                    <button class="theme-toggle">SWITCH MODE</button>
+                </div>
+                <div class="col-span-1 text-right">
+                    <p>Send me an <a href="mailto:alessiopinton97@outlook.com" rel="mailto">email</a> or reach me on <a href="https://www.instagram.com/pin_tuna/">Instagram</a> or <a href="www.linkedin.com/in/alessio-pinton">Linkedin</a> ;;;P</p>
+                </div>
+            </div>
+            <div class="block sm:hidden text-center">
+                <p>© 2026 Alessio Pinton</p>
+            </div>
+
+        </div>
+    </footer>
+
+    <!--SCRIPT-->
+    
+    <!-- Flowbite JS -->
+     <script src="https://unpkg.com/flowbite@latest/dist/flowbite.min.js"></script>
+         
+    <!--Dark/Light mode toggle-->
+    <script>
+    const buttons = document.querySelectorAll('.theme-toggle')
+    
+    function updateButtons() {
+        buttons.forEach(btn => {
+            if (document.documentElement.classList.contains("dark")) {
+                btn.textContent = "LIGHT MODE"
+            } else {
+                btn.textContent = "DARK MODE"
+            }
+        })
+    }
+
+    updateButtons()
+
+    buttons.forEach(btn => {
+        btn.addEventListener("click", () =>{
+            document.documentElement.classList.toggle("dark")
+            
+            if (document.documentElement.classList.contains("dark")) {
+                localStorage.setItem("theme", "dark")
+            } else {
+                localStorage.setItem("theme", "light")
+            }
+            
+            updateButtons()
+        })
+    })
+    
+    </script>
+
+</body>
+</html>
