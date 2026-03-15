@@ -517,14 +517,14 @@ button:hover {
   cursor: pointer;
 }
 summary::marker {
-  content: "";
-  display: none;
+  content: "" !important;
+  display: none !important;
 }
 summary::-webkit-details-marker {
-  display: none;
+  display: none !important;
 }
 summary {
-  list-style: none;
+  list-style: none !important;
 }
 @property --tw-duration {
   syntax: "*";
