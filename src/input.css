@@ -49,6 +49,12 @@
   .ProjectExtLinks-content-wrapper {
     @apply grid grid-cols-2 sm:grid-cols-5 gap-2 pb-5;
   }
+  .ProjectExtLinks-content-column {
+    @apply col-span-1 text-wrap max-h-[30vh] overflow-y-auto [scrollbar-width:none] [&::-webkit-scrollbar]:hidden overflow-x-hidden;
+  }
+  .Contacts-bottomcontent-mobile {
+    @apply col-span-1 align-text-bottom;
+  }
 }
 
 a:hover {
@@ -61,16 +67,16 @@ button:hover {
 
 /* Hides the arrow in most modern browsers */
 summary::marker {
-  content: "";
-  display: none;
+  content: "" !important;
+  display: none !important;
 }
 
 /* Hides the arrow in Safari and older Chrome versions */
 summary::-webkit-details-marker {
-  display: none;
+  display: none !important;
 }
 
 /* Optional: Ensure the summary behaves like a block for layout */
 summary {
-  list-style: none;
+  list-style: none !important;
 }

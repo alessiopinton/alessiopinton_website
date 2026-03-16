@@ -320,6 +320,9 @@
     font-size: var(--text-sm);
     line-height: var(--tw-leading, var(--text-sm--line-height));
   }
+  .text-pretty {
+    text-wrap: pretty;
+  }
   .text-wrap {
     text-wrap: wrap;
   }
@@ -508,6 +511,21 @@
     @media (width >= 40rem) {
       grid-template-columns: repeat(5, minmax(0, 1fr));
     }
+  }
+  .ProjectExtLinks-content-column {
+    grid-column: span 1 / span 1;
+    max-height: 30vh;
+    overflow-x: hidden;
+    overflow-y: auto;
+    text-wrap: wrap;
+    scrollbar-width: none;
+    &::-webkit-scrollbar {
+      display: none;
+    }
+  }
+  .Contacts-bottomcontent-mobile {
+    grid-column: span 1 / span 1;
+    vertical-align: text-bottom;
   }
 }
 a:hover {
