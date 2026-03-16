@@ -517,6 +517,7 @@
     max-height: 30vh;
     overflow-y: auto;
     text-wrap: wrap;
+    overflow-wrap: break-word;
     scrollbar-width: none;
   }
   .ProjectExtLinks-content-column::-webkit-scrollbar {
