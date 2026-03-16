@@ -516,7 +516,6 @@
     grid-column: span 1 / span 1;
     max-height: 30vh;
     overflow-y: auto;
-    text-wrap: wrap;
     overflow-wrap: break-word;
     scrollbar-width: none;
   }
