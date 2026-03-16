@@ -515,17 +515,12 @@
   .ProjectExtLinks-content-column {
     grid-column: span 1 / span 1;
     max-height: 30vh;
-    overflow-x: hidden;
     overflow-y: auto;
     text-wrap: wrap;
     scrollbar-width: none;
-    &::-webkit-scrollbar {
-      display: none;
-    }
   }
-  .Contacts-bottomcontent-mobile {
-    grid-column: span 1 / span 1;
-    vertical-align: text-bottom;
+  .ProjectExtLinks-content-column::-webkit-scrollbar {
+    display: none;
   }
 }
 a:hover {
