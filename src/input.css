@@ -50,7 +50,7 @@
     @apply grid grid-cols-2 sm:grid-cols-5 gap-2 pb-5;
   }
   .ProjectExtLinks-content-column {
-    @apply col-span-1 text-wrap max-h-[30vh] overflow-y-auto; 
+    @apply col-span-1 text-wrap wrap-break-word max-h-[30vh] overflow-y-auto; 
     scrollbar-width:none; /* Firefox */
   }
   .ProjectExtLinks-content-column::-webkit-scrollbar {
