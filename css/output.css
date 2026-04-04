@@ -214,6 +214,9 @@
   .top-3 {
     top: calc(var(--spacing) * 3);
   }
+  .bottom-2 {
+    bottom: calc(var(--spacing) * 2);
+  }
   .bottom-3 {
     bottom: calc(var(--spacing) * 3);
   }
@@ -369,8 +372,8 @@
   .pb-30 {
     padding-bottom: calc(var(--spacing) * 30);
   }
-  .pb-40 {
-    padding-bottom: calc(var(--spacing) * 40);
+  .pb-50 {
+    padding-bottom: calc(var(--spacing) * 50);
   }
   .text-center {
     text-align: center;
