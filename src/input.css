@@ -77,6 +77,46 @@
   .ProjectExtLinks-content-column::-webkit-scrollbar {
     display: none; /* Chrome, Edge, Safari */
   }
+  .AnAmalgamParadigm_title-wrapper {
+    @apply w-screen min-h-[60vh] md:min-h-[80vh] flex items-center bg-center bg-cover -mx-3;
+    background-image: url('../img/AnAmalgamParadigm/Publication/publication_cover.png');
+  }
+  .AnAmalgamParadigm_title {
+    @apply text-7xl md:text-[9rem] leading-15 md:leading-30 wrap-break-word sm:text-pretty pb-5 md:pb-6;
+    font-family: 'Redaction', sans-serif;
+    font-weight: 20;
+    overflow-wrap: break-word;
+  }
+  .AnAmalgamParadigm_subtitle{
+    @apply text-3xl md:text-6xl/12 leading-5 md:leading-15;
+    font-family: 'Redaction', sans-serif;
+    font-weight: 20;
+  }
+  .AnAmalgamParadigm_sectionWrapper{
+    @apply grid sm:grid-cols-4;
+  }
+  .AnAmalgamParadigm_sectionTitle{
+    @apply text-2xl sm:text-3xl;
+  }
+  .AnAmalgamParadigm_sectionTextWrapper{
+    @apply pt-20 pb-30 text-lg text-pretty;
+  }
+  .AnAmalgamParadigm_image{
+    @apply object-cover border border-black dark:border-white;
+  }
+  .AnAmalgamParadigm_imageDescription{
+    @apply text-xs text-neutral-400 pt-2;
+  }
+  .AnAmalgamParadigm_notesWrapper{
+    @apply py-20 text-sm;
+  }
+  .AnAmalgamParadigm_biblioraphy_sectionWrapper{
+    @apply h-[60vh] overflow-y-auto text-wrap wrap-break-word pl-8;
+    scrollbar-width: none; /* Firefox */
+  }
+  .AnAmalgamParadigm_biblioraphy_sectionWrapper::-webkit-scrollbar {
+    display: none; /* Chrome, Edge, Safari */
+  }
 }
 
 a:hover {

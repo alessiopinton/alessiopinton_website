@@ -26,10 +26,11 @@
 <body class="p-3 overflow-x-hidden bg-white dark:bg-black text-black dark:text-white" style="font-family: Redaction; font-weight: 50;">
     
     <!--HEADER-->
-    <header class="sticky grid grid-cols-3 sm:grid-cols-5 pb-3 gap-1 text-sm sm:text-xs">
-        <div class="col-span-5 sm:col-span-1 text-center sm:text-left py-5 sm:py-0">
+    <header main-data-title="ALESSIO PINTON" data-title=" " class="sticky top-3 grid grid-cols-1 sm:grid-cols-5 pb-3 gap-1 text-sm sm:text-xs">
+        <!--desktop-->
+        <div class="hidden sm:block col-span-5 sm:col-span-1 text-left sm:py-0">
             <div>
-                <a href="./index.html">ALESSIO PINTON</a>
+                <a href="#index" class="main-header-name">ALESSIO PINTON</a>
             </div>
         </div>
         <div class="col-span-1 hidden sm:block"></div>
@@ -38,31 +39,37 @@
         <div class="col-span-1"></div>
         <div class="col-span-1 text-center sm:text-right">
             <div class="hidden sm:block">
-                <button class="theme-toggle">SWITCH MODE</button>
+                <a href="" id="header-name"></a>
+            </div>
+        </div>
+        <!--mobile-->
+        <div class="block sm:hidden text-center py-1">
+            <div>
+                <a href="#index" class="main-header-name">ALESSIO PINTON</a>
             </div>
         </div>
     </header>
     
-    <!--TITLE-->
     <main>
 
-        <section id="title" class="w-screen h-[60vh] sm:h-[80vh] -mx-3 bg-center bg-cover flex items-center" style="background-image: url(./img/AnAmalgamParadigm/Publication/publication_cover.png);">
-            <div class="px-8 sm:items-center">
+    <!--TITLE-->
+        <section id="title" main-data-title="ALESSIO PINTON" class="AnAmalgamParadigm_title-wrapper">
+            <div class="p-10 items-center">
                 <div>
-                    <h2 class="text-7xl sm:text-[9rem] wrap-break-word sm:leading-30 sm:text-pretty pb-10" style="font-family: Redaction; font-weight: 20;">An Amalgam Paradigm</h2>
-                    <span class="text-3xl sm:text-6xl/12" style="font-family: Redaction; font-weight: 20;">for an embodied practice of empathy with an inorganic aggregates ecosystem</span>
+                    <h2 class="AnAmalgamParadigm_title">An Amalgam Paradigm</h2>
+                    <span class="AnAmalgamParadigm_subtitle">for an embodied practice of empathy with an inorganic aggregates ecosystem</span>
                 </div>
             </div>
         </section>
 
 
         <!--CONTENT-->
-        <section class="py-40">
+        <section id="content" class="py-40">
 
             <!--INDEX-->
-            <section id="index" class="grid sm:grid-cols-4 pt-20 pb-30">
-                <div class="col-span-1"></div>
-                <div class="col-span-2 text-2xl sm:text-3xl">
+            <section id="index" main-data-title="AN AMALGAM PARADIGM" data-title="INDEX" class="AnAmalgamParadigm_sectionWrapper pt-20 pb-30">
+                <div class="col-span-1 hidden sm:block"></div>
+                <div class="col-span-2 AnAmalgamParadigm_sectionTitle">
                     <h2>Index</h2>
                     <ul class="flex flex-col p-10 list-style-type:square">
                         <li class="p-2">&#8600;&#xFE0E; <a href="#introduction">Introduction</a></li>
@@ -74,15 +81,15 @@
                         <li class="p-2">&#8600;&#xFE0E; <a href="#aknowledgments">Aknowledgments</a></li>
                     </ul>
                 </div>
-                <div class="col-span-1"></div>
+                <div class="col-span-1 hidden sm:block"></div>
             </section>
 
             <!--INTRODUCTION-->
-            <section id="introduction" class="grid sm:grid-cols-4">
+            <section id="introduction" main-data-title="AN AMALGAM PARADIGM" data-title="INTRODUCTION" class="AnAmalgamParadigm_sectionWrapper">
                 <div class="col-span-1"></div>
                 <div class="col-span-2">
-                    <h2 class="text-2xl sm:text-3xl">Introduction</h2>
-                    <div class="pt-20 pb-30 text-lg text-pretty">
+                    <h2 class="AnAmalgamParadigm_sectionTitle">Introduction</h2>
+                    <div class="AnAmalgamParadigm_sectionTextWrapper">
                         <p class="indent-8">In 1973, the publication <i>“Inquiry: An Interdisciplinary Journal of Philosophy”</i> was drawing the boundary line between shallow and deep ecology in the words of the Norwegian philosopher Arne Naess. Rejecting the image of the man-in-environment, the article <i>“The Shallow and the Deep, Long-Range Ecology Movement”</i> defined the failure of anthropocentric ecology, which places the human above and outside nature, ascribing to the latter only instrumental, or use, values.<sup id="ref1"><a href="#nota1">[1]</a></sup> The shallowness of this approach lies in its floating behaviour on top of anti-ecological social and economic structures rooted in systems or patterns of domination of which patriarchal, imperialist, capitalist and racist are just some examples; without questioning the true foundations of modern, scientific, industrial, growth-oriented, materialistic worldview.<sup id="ref2"><a href="#nota2">[2]</a></sup> In contrast to <i>shallow ecology</i> — continues the article — <i>deep ecology</i> describes the universe as a network: phenomena following one another in interconnected and interdependent nodes, to which human and life itself is no exception; in what Arne Naess call as <i>biospherical net</i>. Taking a systemic stance, the fledgling philosophical school was defined as ecocentric, meaning that instead of placing the anthropos at the centre, it places its pivot on the ecosystem itself, or the network of relations that runs between things: “An intrinsic relation between two things A and B is such that the relation belongs to the definitions or basic constitutions of A and B, so that without the relation, A and B are no longer the same things. The total-field model dissolves not only the man-in-environment concept, but every compact thing-in-milieu concept [...]”. (Naess 1973)</p>
                         <p class="indent-8">21 years later, Fritjof Capra, physicist and systems theorist, described, reflected in this dichotomy, the image of a deeper perceptual crisis facing a whole series of environmental global concerns threatening the biosphere and human life. The direction of what he described as “a change of paradigms as radical as the Copernican revolution” (Capra 1996) traced the path moving from a mechanistic to a systemic perception of the world. According to Capra, in this paradigm shift from mechanistic to system thinking, the ontological relationship between the parts and the whole gets reversed. In the mechanistic vision of Cartesian science, there is an emphasis on the parts over the whole, which consequences in the belief that the behaviour of a system can be analysed in terms of the properties of its parts; while the systemic (or ecological) science, prioritising the whole, has shown that the properties of the parts are not intrinsic traits but contextual to the system in which they are immersed. <sup id="ref3"><a href="#nota3">[3]</a></sup></p>
                         <p class="indent-8">Back to Arne Naess’s article, the parallelism between the dualism shallow/deep ecology and mechanistic/systemic worldview lies in their ontological approach to the world. The world of the man-in-environment is defined as a collection of objects (and that for this inherently mechanistic) in which first man and then the living are the exception, and in which hierarchical structures and the organization and categorization of matter enact its racialization. This mechanistic paradigm that prioritizes the parts on the whole produces logic of prevarication and extractivism that extend through and beyond the field of the <i>passive or inanimate</i>. The human and the inhuman, its subcategory, sprout from the division of matter into active and inert, and therefore passive (waiting for extraction and possessing properties).<sup id="ref4"><a href="#nota4">[4]</a></sup></p>
@@ -95,10 +102,10 @@
                         <br>
                         <p class="indent-8">Starting from the inquiry of the vitality of the <i>apparently inanimate</i> and the antrophomorphization of it as a practice of embodied empathy, will be explored how the rock cycle takes part in organic processes and how DNA can act as a geomorphological sedimentary agent. These research subjects will be deepen by framing the chemical and physical processes underlying the values of minerals and organisms’ agglomerates in an ecosystemic context; but will also serve as a real projection of the emerging and mutation abilities of disciplinary clusters. In order to prove the value of an ecological vision of entities and the <i>animating power of aggregates</i>, system thinking, material vitalism, emergence traits patterns and posthumanist visions on the individual will be woven through the narration of the thesis and of the lithogenic cycle. The autoethnographic methodology will shuffle narrative and critical thinking in the alternation of physical, metaphysical, and personal analyses in search of isomorphies between research subjects. Anthropomorphizing inorganic matter in fact is not intended as an anthropocentric act but rather an attempt to approach a formally distant subject, an attempt to empathize with it; but also a way of using <i>empathy as a tool for critical analysis</i>. With the aim of eroding the ontological divisions that dictate hierarchies and entities as separate and independent elements, each chapter is understood as a sedimentation act that weathers away hierarchical structures and deposits, and agglomerates their rests into the earthly kin of the lithogenic cycle; then renamed as Abyss as opposed to the world of human and divine abstractions.</p>
                         <div class="pt-20">
-                            <img class="w-full object-cover border border-black" src="./img/AnAmalgamParadigm/Publication/publication_2.png">
-                            <p class="text-xs text-neutral-400 pt-2">[fig.1] (2023) View with low clouds on a gravel tongue along a slope of Mount Cavallo. Pordenone, Italy.</p>
+                            <img class="w-full AnAmalgamParadigm_image" src="./img/AnAmalgamParadigm/Publication/publication_2.png">
+                            <p class="AnAmalgamParadigm_imageDescription">[fig.1] (2023) View with low clouds on a gravel tongue along a slope of Mount Cavallo. Pordenone, Italy.</p>
                         </div>
-                        <div class="py-20 text-sm">
+                        <div class="AnAmalgamParadigm_notesWrapper">
                             <span>NOTES</span><br><br>
                             <span id="nota1"><a href="#ref1"><sup>[1]</sup></a> Arne Naess, «The Shallow and the Deep, Long-range Ecology Movement. A Summary», Inquiry 16, fasc. 1–4 (January 1973): 95–100, https://doi.org/10.1080/002017473086016 82</span><br><br>
                             <span id="nota2"><a href="#ref2"><sup>[2]</sup></a> Fritjof Capra, The Web of Life: A New Scientific Understanding of Living Systems, 1. Anchor Books ed (New York, NY: Anchor Books Doubleday, 1996), 8.</span><br><br>
@@ -117,11 +124,11 @@
             </section>
 
             <!--CHAPTER 1-->
-            <section id="ch1" class="grid sm:grid-cols-4 py-20">
+            <section id="ch1" main-data-title="AN AMALGAM PARADIGM" data-title="ACT I: for the vibrancy of the inanimate" class="AnAmalgamParadigm_sectionWrapper py-20">
                 <div class="col-span-1"></div>
                 <div class="col-span-2">
-                    <h2 class="text-2xl sm:text-3xl">ACT I: for the vibrancy of the inanimate</h2>
-                    <div class="pt-20 pb-30 text-lg text-pretty">
+                    <h2 class="AnAmalgamParadigm_sectionTitle">ACT I: for the vibrancy of the inanimate</h2>
+                    <div class="AnAmalgamParadigm_sectionTextWrapper">
                         <p class="indent-8">By the time we arrived, the weather had worsened. It is not raining but a glacial wind is blowing along the slope, curiously from the bottom to the peak. Low clouds hastily ascend the mountainside as if they wanted to exchange with the boulders lying on it, which instead slowly descend. Me and Alessandro decided that we have reached our destination for the day. A wooden five-metre-high crucifix faces the flatland below, now covered by a sea of clouds. At its foot, a section of trunk cut in two along its length forms a bench on which rests my fanny pack and Alessandro’s backpack. Perhaps we could have climbed more if we had left earlier this morning. The clouds rush through me, and when they surround me, they are colder than ever; unfortunately, I have nothing to wear but the still useless rain jacket I am already wearing. It’s a nice feeling though. The mountain walls are still warm, they may feel the touch of the low clouds in the same way I do. In front of me a cone-shaped slope is covered with grass and boulders of different sizes; in the centre crawls a long tongue of gravel that cuts in half the huge lawn. Some animal whistles, perhaps a marmot.</p>
                         <br>
                         <p class="indent-8">I keep quiet.</p>
@@ -134,8 +141,8 @@
                         <p class="indent-8">Dyeing opaque in a slow oxidation process, the previously shiny golden surfaces of the pyrite fragment still on top of my desk, have revealed themselves to be animated; they showed their breathing, their capacities of interacting with the moisture steamed out of my body, out of my touch; their organic-like traits. It is no coincidence indeed that the word animacy derives from the etymological root of soul, which in various ancient languages such as Sanskrit (atman), Greek (pneuma) and Latin (anima) means breath.<sup id="ref13"><a href="#nota13">[13]</a></sup> <sup id="ref14"><a href="#nota14">[14]</a></sup></p>
                         <p class="indent-8">The animacy of matter shows itself as a property related to the perceptive threshold of the observer, an approximation; an analog signal transformed into digital, that switches to 1 once reached an appropriate range to be captured. Not differently from the cyclical movements of organic matter, rock and mineral compounds animate beyond human direct sensing, and follow circular paths of recycling and transformation. Depending on the pressure, heat and chemical-physical modes of agglomeration, the quantities and structures of the mineral element’s rocks are made of can vary, positioning them along a gradient of intersecting species.<sup id="ref15"><a href="#nota15">[15]</a></sup> This process is called lithogenic cycle, and within it, inorganic agglomerates act as living bodies, interdependent and active. Each of those boulders gathered in quiet contemplation represents a momentary state of matter, a mutation, an evolutionary stage. In their cyclical walk, the elements of the earth’s crust are continually transformed, disaggregated and re-aggregated from one form to another; and in doing so they exchange matter and act upon each other.</p>
                         <div class="py-20">
-                            <img class="w-full object-cover border border-black dark:border-none dark:invert" src="./img/AnAmalgamParadigm/Publication/publication_3.png">
-                            <p class="text-xs text-neutral-400 pt-2">[fig.2] Garrels, Robert M., and Fred T. MacKenzie. ‘A Quantitative Model for the Sedimentary Rock Cycle’. Marine Chemistry 1, no. 1 (September 1972) Infographic of the quantitative model of the sedimentary rock cycle. Department of Oceanography, University of Hawaii, Honolulu, Hawaii (U.S.A.) Department of Geological Sciences, Northwestern University, Evanston, Ill. (U.S.A.)</p>
+                            <img class="w-full AnAmalgamParadigm_image dark:invert" src="./img/AnAmalgamParadigm/Publication/publication_3.png">
+                            <p class="AnAmalgamParadigm_imageDescription">[fig.2] Garrels, Robert M., and Fred T. MacKenzie. ‘A Quantitative Model for the Sedimentary Rock Cycle’. Marine Chemistry 1, no. 1 (September 1972) Infographic of the quantitative model of the sedimentary rock cycle. Department of Oceanography, University of Hawaii, Honolulu, Hawaii (U.S.A.) Department of Geological Sciences, Northwestern University, Evanston, Ill. (U.S.A.)</p>
                         </div>
                         <p class="indent-8">The same animate matter change the disposition and way of relating of its particles, mutating from one agglomerate to another. Every mineralogical aggregate, every rock, every inorganic element of the earth’s crust carries a story within itself: a story of crossings and mutations from one state to another, from one body to another. Geological and other-than-geological bodies. The lithogenic cycle reveals itself not dealing with the genesis of the lithos, but rather with the re-organization of it. Beneath the human perception threshold and through geological time frames, the lithosphere comes alive and the lithogenic cycle emerges as a consequence of its liveliness.</p>
                         <p class="indent-8">The vital materialism that runs through the rocks on that slope and the animism projected onto them, in a self-reinforcing act nourish each other raising a progressive lively spiral that lifts them from the state of inert passivity which human unempathy, and life exceptionalism, relegated them into.<sup id="ref16"><a href="#nota16">[16]</a></sup> Under the lenses of vital materialism, anthropomorphism does not act as a narcissistic practice of projecting one’s image onto other organisational systems; rather, it acts on hierarchical mental structures by uncovering a world of resonances and similarities that would otherwise have remained buried.<sup id="ref17"><a href="#nota17">[17]</a></sup> Conceptualizing rocks or mineral fragments as creatures gives them a shape, if not anthropic at least biotic, relatable and easily empathizable with. Such levelling is useful to the de-categorization of entities by making them interchangeable in hierarchical terms: the human being as a mineral agglomerate or the lithogenic aggregates as a genetic outcome. It’s an embodied practice of empathy.</p>
@@ -144,10 +151,10 @@
                         <br>
                         <p class="indent-8">I look once again at the small ceremony between rocks. I take a picture of their ritual; I would like but I don’t join them. Instead, I stay stand contemplating from distance, like them, that settlement.</p>
                         <div class="py-20">
-                            <img class="w-full object-cover border border-black" src="./img/AnAmalgamParadigm/Publication/publication_4.png">
-                            <p class="text-xs text-neutral-400 pt-2">[fig.3] (2023) View of the sky from Mt. Cavallo track. Pordenone, Italy.</p>
+                            <img class="w-full AnAmalgamParadigm_image" src="./img/AnAmalgamParadigm/Publication/publication_4.png">
+                            <p class="AnAmalgamParadigm_imageDescription">[fig.3] (2023) View of the sky from Mt. Cavallo track. Pordenone, Italy.</p>
                         </div>
-                        <div class="py-20 text-sm">
+                        <div class="AnAmalgamParadigm_notesWrapper">
                             <span>NOTES</span><br><br>
                             <span id="nota11"><a href="#ref11"><sup>[11]</sup></a> Jane Bennett describes thing power as the ability of objects to manifest their independence and vitality by calling objects to mind as animate beings. Jane Bennett, Vibrant matter: a political ecology of things (Durham: Duke University Press, 2010). xvi, 20.</span><br><br>
                             <span id="nota12"><a href="#ref12"><sup>[12]</sup></a> Invoking a theory of relativity, material vitalism gems from the perceptible difference in velocity rates between entities considered fixed and those considered mobile. Objects' appear as such insofar as their happening occurs below the threshold of human perception of movement; but beyond their appearing, still there is no point of pure immobility, no atom that is not quivering with virtual force. Ildib., 55 - 57.</span><br><br>
@@ -164,11 +171,11 @@
             </section>
 
             <!--CHAPTER 2-->
-            <section id="ch2" class="grid sm:grid-cols-4 py-20">
+            <section id="ch2" main-data-title="AN AMALGAM PARADIGM" data-title="ACT II: for the embodiment of the Abyss" class="AnAmalgamParadigm_sectionWrapper py-20">
                 <div class="col-span-1"></div>
                 <div class="col-span-2">
-                    <h2 class="text-2xl sm:text-3xl">ACT II: for the embodiment of the Abyss</h2>
-                    <div class="pt-20 pb-30 text-lg text-pretty">
+                    <h2 class="AnAmalgamParadigm_sectionTitle">ACT II: for the embodiment of the Abyss</h2>
+                    <div class="AnAmalgamParadigm_sectionTextWrapper">
                         <p class="indent-8">On the small terrace on which I stand, someone has assembled small stone circles here and there to mark the presence of shy blossoming edelweiss bushes. A tiny but sweet act of care. I take two pictures of one of them, then, in an unconscious act of isomorphism, I decide to lie down, side to it, and look at the sky for a while. I would like to try to feel what one of those rocks on the slope feels.</p>
                         <br>
                         <p class="indent-8">I feel exposed and fragile here. I am at the mercy of the elements; my bones would be easily eroded.</p>
@@ -177,16 +184,16 @@
                         <p class="indent-8">In that very natural gesture, I see myself belonging to the Abyss, the need to feel the mud under my feet, under my palms; like one of those creatures that Donna Haraway calls chthonic. Belonging to the earth, to the humus, to the Abyss, chthonian comes from the ancient Greek khthonios, meaning of the earth. In Greek mythology, these figures are depicted as beings from the underworld, subterranean creatures opposed to the astral gods; Hesiod wrote about them as sea demons, fearsome evil creatures intertwined with nature forces. <sup id="ref19"><a href="#nota19">[19]</a></sup></p>
                         <p class="indent-8">In an act of hierarchical subjugation, the sky-gazing man has opposed the earth to the heavens by subjugating the Abyss and its creatures to the astral world of the divine. The chthonic Nature, through these narratives, become a malign and imperfect force that challenges benevolent human-like Gods: a dichotomy between astralized forces and the Abyss has been drawn. But chthonic creatures are older than these: the narratives of Ptonia Theron, or the Sumerian Ouroboros stem from a time when human abstractions did not dictate hierarchies between nature and the divine world. Far from those structures, abyssal creatures were linked to cycle of life and death, inextricably tying human with the liveliness of the earth; and it is from this ancient vision of the Abyss that Donna Haraway start drawing a chthonic ecosystem that subverts the patriarchal logic of nature’s hierarchisation to the semi-divine man. A place where the creatures act in symbiosis, shaping a sympoietic system where organisms eat and digest each other; and where humans are no exception.<sup id="ref20"><a href="#nota20">[20]</a></sup> Indeed, the word human proves itself chthonic: closely related to the term humus, earth, specifically moist, watery and therefore alive and cultivable, the etymological roots of this term draw several parallelisms with the ground world.<sup id="ref21"><a href="#nota21">[21]</a></sup> A narrative closer to the holism of the Ouroboros than to the dualist representation of Olympus and the Gorgons.</p>
                         <div class="flex flex-col items-center justify-center py-20">
-                            <img class="w-96 object-cover border border-black" src="./img/AnAmalgamParadigm/Publication/publication_5.png">
-                            <p class="w-96 text-xs text-neutral-400 pt-2">[fig.4] Attributed to Polygnotos. (ca. 450–440 BCE) Terracotta pelike showing Perseus beheading the sleeping Medusa. The Met Muesum, New York.</p>
+                            <img class="w-96 AnAmalgamParadigm_image" src="./img/AnAmalgamParadigm/Publication/publication_5.png">
+                            <p class="AnAmalgamParadigm_imageDescription w-96">[fig.4] Attributed to Polygnotos. (ca. 450–440 BCE) Terracotta pelike showing Perseus beheading the sleeping Medusa. The Met Muesum, New York.</p>
                         </div>
                         <p class="indent-8">Despite the difference in the genesis of the concept, Haraway’s narration resonates with the way Hidetaka Miyazaki, director of FromSoftware, depicts the relationship between humanities and the Abyss in the videogame Dark Souls. “The Abyss is an ecosystem capable of creating life, as generated by one of the core components of the First Flame [...] it is uninhabitable to all beings aligned with Fire including the Gods. In contrast, any beings aligned with or indifferent to the Abyss (such as humans) are able to roam it with no risk of harm or corruption.” (Murray 2019) In Miyazaki’s work, the Abyss is described as a corrupt place, a manifestation of humanity’s dark side when left unchecked; but also as primordial soup, a generative agent of life and that for this cradle for humanities: black shadows, small chasms (or abysses) describe “the base form of human beings”, entities independent from their bodies that wander hollow in it.</p>
                         <p class="indent-8">While Haraway’s Abyss narrative is aimed at the subversion of human exceptionalism and the mental hierarchical structure whereby humanity (and the Gods as a consequence) is superior to nature, Miyazaki’s painting stems from an extremely anthropocentric worldbuilding, calling the Abyss as a dark manifestation of the “unchecked” human souls and therefore corrupt.<sup id="ref22"><a href="#nota22">[22]</a></sup> But, despite the divergent narrative intentions, the two share unexpectedly common traits.</p>
                         <p class="indent-8">Starting from the opposition to the astral manifestations of the divines, Haraway conceptualise this dualism in the power of the Abyss to subvert patriarchal and hierarchical interpretations of nature and humanity; for Miyazaki, instead, the opposition is more factual “[only] beings aligned with or indifferent to the Abyss are able to roam it with no risk of harm or corruption”, and the Gods are not among them. Cradle of humans, in both narratives the Abyss breaks the artificial umbilical cord that keeps humanity connected to its divine exceptionalism: the human becomes humus and adam becomes adamah,<sup id="ref23"><a href="#nota23">[23]</a></sup> deeply connected to the earth, to the mud, to the underground; and instead, they describe it as a generative and ecosystemic environment which, in its sympoietic becoming, life inherently take part to it.</p>
                         <p class="indent-8">Emerging from the interaction of its components, a sympoietic system not only needs the relationship between its parts in order to thrive, but is the complex of the relationships themselves. Ecosystems, for example, are sympoietic structures, and they can be interpreted as emergent behaviours and relational entities which spatial and temporal boundaries, unlike autopoietic systems,<sup id="ref24"><a href="#nota24">[24]</a></sup> are not well delineated, but rather blurs away in the context they are settled. In the sympoiesis of its creatures, the Abyss thus takes the form of what Scott F. Gilbert, Jan Sapp and Alfred I. Tauber defined as a holobiont.<sup id="ref25"><a href="#nota25">[25]</a></sup> An entity far from the One and the individual, in which the creatures taking part to it, its node of relationships, create each other through material involvement.<sup id="ref26"><a href="#nota26">[26]</a></sup> But also each chthonic entity, as in Miyazaki’s illustration of humanities, is a small chasm itself, and therefore constitutes both node and network of a sympoietic system.</p>
                         <div class="py-20">
-                            <img class="w-full object-cover border border-black" src="./img/AnAmalgamParadigm/Publication/publication_6.png">
-                            <p class="text-xs text-neutral-400 pt-2">[fig.5] Posted by Daifukkatsu in Humanity Phantom page of Dark Souls Wiki (2014) Humanity Phantoms in the Chasm of the Abyss. Dark Souls.</p>
+                            <img class="w-full AnAmalgamParadigm_image" src="./img/AnAmalgamParadigm/Publication/publication_6.png">
+                            <p class="AnAmalgamParadigm_imageDescription">[fig.5] Posted by Daifukkatsu in Humanity Phantom page of Dark Souls Wiki (2014) Humanity Phantoms in the Chasm of the Abyss. Dark Souls.</p>
                         </div>
                         <p class="indent-8">This chthonic newborn holobiont does not only involve organic entities, but also inorganic ones: in the symbiotic co-dependency between living and non-living actors, molecules of different complexities constitute information and exchange material between the biological and geological realms, which, by crossing each other sympoietically, break the ontological chains that keep them separate. What the concepts of symbiosis, sympoiesis, and co-evolution share is that they commonly refer to the context of interactions within the disciplinary realm of biology; in this sense, the use of such terms to describe relationships between and with the other-than-living returns to matter the anima-cy lost in the ontological subordination process of the geological to the organic. Indeed, co-evolutionary and symbiotic traits are not exclusive to the organic realm; rather, the biosphere, atmosphere and lithosphere have always experienced co-evolutionary processes. James E. Lovelock and Lynn Margulis in their formulation of the Gaia Hypothesis<sup id="ref27"><a href="#nota27">[27]</a></sup> question the profoundly anomalous chemical composition of the atmosphere as evidence of this co-evolutionary behaviour. “[...] the word Gaia will be used to describe the biosphere and all of those parts of the Earth with which it actively interacts to form the hypothetical new entity with properties that could not be predicted from the sum of its parts.” (Lovelock and Margulis 1974) In their identification of shared behaviour, Lovelock and Margulis extend the tentacles of Gaia’s macro-creature outside the boundaries of the biosphere to reach agents commonly described as passive (and therefore lacking in evolutionary capabilities). But the comparison with the nearby planets of the solar system, makes visible the organic-inorganic co-evolutionary proceeding of this web, that allowed life to thrive on the planet.<sup id="ref28"><a href="#nota28">[28]</a></sup> In the meanwhile, chemical and physical reactions between atmosphere and lithosphere have diverted the evolutionary progression of organic systems as well. Through the absorption and processing of lithogenic components, organisms have influenced the formation of new mineral patterns, redirecting the sedimentation paths of the lithosphere itself.<sup id="ref29"><a href="#nota29">[29]</a></sup></p>
                         <br>
@@ -195,10 +202,10 @@
                         <p class="indent-8">In the slow but inexorable progression of the lithogenic cycle, the chthonic creatures take part to the Abyss, symbiont after symbiont, network after network, aggregate after aggregate; banished and far from the astralisations of the Gods. In our momentary organisational states, earth particles are cyclically embodied and scattered; a time-encompassing interaction rooted in our belonging to Gaia, in our common kin and blood.</p>
                         <p class="indent-8">Organic matter, fossil, sediment, stone: the vibrant lithogenic stream fills the subterranean chambers of volcanoes with incandescent material and pushes up the mountain chains; but it also pulses, tepid, the blood in my veins.</p>
                         <div class="py-20">
-                            <img class="w-full object-cover border border-black" src="./img/AnAmalgamParadigm/Publication/publication_7.png">
-                            <p class="text-xs text-neutral-400 pt-2">[fig.6] (2023) Circle of stones to mark the presence of the edelweiss bush. Pordenone, Italy.</p>
+                            <img class="w-full AnAmalgamParadigm_image" src="./img/AnAmalgamParadigm/Publication/publication_7.png">
+                            <p class="AnAmalgamParadigm_imageDescription">[fig.6] (2023) Circle of stones to mark the presence of the edelweiss bush. Pordenone, Italy.</p>
                         </div>
-                        <div class="py-20 text-sm">
+                        <div class="AnAmalgamParadigm_notesWrapper">
                             <span>NOTES</span><br><br>
                             <span id="nota19"><a href="#ref19"><sup>[19]</sup></a> The Gorgons are an example of chtonic creatures within Greek mythology. Those creatures are described with an undefined horizontal lineage, capable of transforming men who looked at their faces into stone.  Donna Haraway, Staying with the Trouble: Making Kin in the Chthulucene, Experimental Futures Technological Lives, Scientific Arts, Anthropological Voices (Durham London: Duke University Press, 2016), 202.</span><br><br>
                             <span id="nota20"><a href="#ref20"><sup>[20]</sup></a> Ildib.</span><br><br>
@@ -218,11 +225,11 @@
             </section>
 
             <!--CHAPTER 3-->
-            <section id="ch3" class="grid sm:grid-cols-4 py-20">
+            <section id="ch3" main-data-title="AN AMALGAM PARADIGM" data-title="ACT III: for the genetics beyond genetics" class="AnAmalgamParadigm_sectionWrapper py-20">
                 <div class="col-span-1"></div>
                 <div class="col-span-2">
-                    <h2 class="text-2xl sm:text-3xl">ACT III: for the genetics beyond genetics</h2>
-                    <div class="pt-20 pb-30 text-lg text-pretty">
+                    <h2 class="AnAmalgamParadigm_sectionTitle">ACT III: for the genetics beyond genetics</h2>
+                    <div class="AnAmalgamParadigm_sectionTextWrapper">
                         <p class="indent-8">Still lying on the ground, I turn my head towards the stone of the circle closest to me. Cast in the pale limestone, several marine relics take part to an act of care between entities of the Abyss</p>
                         <br>
                         <p class="indent-8">Fragments of shells and ancient sea creatures fused into the same rock body surround the tiny edelweiss bush in order to flag its presence. Many of these molluscs, after death, settled on the seabed, accumulated and, buried by the sediment, became embedded in the present-day Alpine geological formations.<sup id="ref30"><a href="#nota30">[30]</a></sup> Their hybrid nature proves the patient, transparent walk of earth particles, which incarnation after incarnation are transported along and through Earth’s crust; but also, the existence of a material vibrancy in any entity not considered matter. The fossil organizational state represents the bio-mineral lineage gate: the living beings as sediment and the stone as former- (or future) alive bodily remains. A relational moment in the middle of two others, the organic and the inorganic, communed by the animacy inherent to networks; and in which the mineralogical kin, the common substance,<sup id="ref31"><a href="#nota31">[31]</a></sup> flow through like blood or magma streams.</p>
@@ -232,8 +239,8 @@
                         <p class="indent-8">Vital materialism act like genetics beyond genetics. Fossilization embodies the evidence of the after death bodily mutation’s continuity in the lithogenic cycle; of the common belonging to the same, earthly kin. A double directional kinship that thrives along the moment between the living and the never lived, and that occupies the touching point of the two semantic bubbles that separate what is considered alive and what is not. Inorganic animacy indistinctly permeates organisms and in-organisms by showing itself in the chemical exchange of sympoiesis and the inherently co-evolutionary properties of Gaia; through the fossil organizational state the vibrancy becomes embodied: the demonstration of the cyclical transition from organic to inorganic form (and vice versa) of the lithogenic cycle.</p>
                         <p class="indent-8">Bringing testimonies from the Abyss, as if to reveal the unspoken lithogenic origins of those alpine flowers, the circle of pale limestone rocks takes a picture of the neritic waters that occupied this area during the Triassic. <sup id="ref34"><a href="#nota34">[34]</a></sup></p>
                         <div class="flex flex-col justify-center py-20">
-                            <img class="w-auto object-cover border border-black" src="./img/AnAmalgamParadigm/Publication/publication_8.png">
-                            <p class="text-xs text-align-left text-neutral-400 pt-2">[fig.7] (2024) Organogenic alpine limestone with crystals of calcium acetate. Eindhoven, The Netherlands.</p>
+                            <img class="w-auto AnAmalgamParadigm_image" src="./img/AnAmalgamParadigm/Publication/publication_8.png">
+                            <p class="AnAmalgamParadigm_imageDescription">[fig.7] (2024) Organogenic alpine limestone with crystals of calcium acetate. Eindhoven, The Netherlands.</p>
                         </div>
                         <p class="indent-8">Like the nearby Dolomites, these limestone mountainous aggregates are mainly formed by carbonate organogenic rocks;<sup id="ref35"><a href="#nota35">[35]</a></sup> here innumerable terrestrial particles have claimed life, and after blossoming, have settled and lithified in these geomorphologies. The source of such huge quantities of carbonate organic material has been traced in the so-called carbonate platforms, underwater mounds of carbonate organic matter precipitated and accumulated on the seabed.<sup id="ref36"><a href="#nota36">[36]</a></sup> The platform, made of former-alive material, serves as a foundation for future life forms above it, which in turn nourish the platform itself. Hybrid organic-inorganic co-evolutionary systems, equipped of the emergent properties that drive their growth, thrive and renewal.<sup id="ref37"><a href="#nota37">[37]</a></sup> The organic boundary of a carbonate platform is difficult to delineate: lives generated on top of the remains of others, old organisms that act as foundations for new ones, sediments that emerge in living systems to feed the geomorphology from which they developed from.</p>
                         <p class="indent-8">In the sedimentary progression of this chthonic system, genetics and lithogenetics, collaborate and determine each other in a feedback loop: the result is a sympoietic ecosystem, capable of evolving from the interaction between parts, and to testimony the Abyss’ ceaseless becoming.</p>
@@ -243,13 +250,13 @@
                         <p class="indent-8">DNA not only act as agent on sedimentation patterns but is mineral embodiment itself: life is not alien to geological happening. Organisms are pure mineral flesh. A relentless rain collapses the skeleton of power that dooms the Abyss, and its minerals melt to nourish the generative ecosystem that previously lay at its feet. Under this newly casted shadow of a disrupted hierarchy, the chthonic creatures thrive and regenerate; and the organic is left nothing more than a random expression of a far-reaching tentacle of the Abyss, a geologic happening embodiment, a mineralogical aggregate.</p>
                         <div class="grid grid-cols-2 gap-2 py-20">
                             <div class="col-span-1">
-                                <img class="w-auto object-cover border border-black" src="./img/AnAmalgamParadigm/Publication/publication_9.png">
+                                <img class="w-auto AnAmalgamParadigm_image" src="./img/AnAmalgamParadigm/Publication/publication_9.png">
                             </div>
                             <div class="col-span-1">
-                                <img class="w-auto object-cover border border-black" src="./img/AnAmalgamParadigm/Publication/publication_10.png">
+                                <img class="w-auto AnAmalgamParadigm_image" src="./img/AnAmalgamParadigm/Publication/publication_10.png">
                             </div>
                             <div class="col-span-2">
-                                <p class="text-xs text-neutral-400 pt-2">[fig.8-9] Addadi, Lia, and Stephen Weiner. ‘Control and Design Principles in Biological Mineralization’. Angewandte Chemie International Edition in English 31, no. 2 (February 1992) Microscopic views on organogenic aragonitic biomineralized crystals. Dead Sea.</p>
+                                <p class="AnAmalgamParadigm_imageDescription">[fig.8-9] Addadi, Lia, and Stephen Weiner. ‘Control and Design Principles in Biological Mineralization’. Angewandte Chemie International Edition in English 31, no. 2 (February 1992) Microscopic views on organogenic aragonitic biomineralized crystals. Dead Sea.</p>
                             </div>
                         </div>
                         <p class="indent-8">The wind has exhausted its force and the cloud banks that were previously rushing towards the summit of the mountain, slow down to fall back to earth in the shape of rain. The first raindrop has fallen on the clump of edelweiss in the centre of the circle of rocks, the second one printed on my T-shirt; the weather is changing, a sign that it is time to turn back. It is the end of a cycle: as this water runs, it will slowly dissolve the ecosystem fossil on which I’m laying on and will transport the precious minerals set in these limestone agglomerates, downstream, to feed the valleys underneath.</p>
@@ -260,7 +267,7 @@
                         <p class="indent-8">I am isomorphically following the erosive course that will inevitably lead to the exhaustion of the energy emerging from the mineralogical aggregate of my body; and that will lead my system-individual to disgregate and finally settle. Once reached the bottom I will become sand at the foot of this mountain, leaving behind, at the side of the path only the fragment I gathered from uphill, the inexistent abstraction of my One.</p>
                         <br>
                         <p class="indent-8">The genes and mutations that have transformed me are not even mine, they are the geological memory of this planet and proof of our reciprocal being. I am sediment in this lithomorphic movement of descent, and I am also sediment in the organomorphic life-long movement of myself; and I will be sediment as well in setting down my bones and blood to the ground.</p>
-                        <div class="py-20 text-sm">
+                        <div class="AnAmalgamParadigm_notesWrapper">
                             <span>NOTES</span><br><br>
                             <span id="nota30"><a href="#ref30"><sup>[30]</sup></a> Claudia Marella, Riccardo Caputo, Alfonso Bosellini, Growth and subsidence of carbonate platforms: numerical modelling and application to the Dolomites, Italy (ANNALS OF GEOPHYSICS, VOL. 47, N. 5, October 2004), 1.</span><br><br>
                             <span id="nota31"><a href="#ref31"><sup>[31]</sup></a> Donna Haraway, Staying with the Trouble: Making Kin in the Chthulucene, Experimental Futures Technological Lives, Scientific Arts, Anthropological Voices (Durham London: Duke University Press, 2016), 196.</span><br><br>
@@ -280,11 +287,11 @@
             </section>
 
             <!--CONCLUSION-->
-            <section id="conclusion" class="grid sm:grid-cols-4 py-20">
+            <section id="conclusion" main-data-title="AN AMALGAM PARADIGM" data-title="CONCLUSION" class="AnAmalgamParadigm_sectionWrapper py-20">
                 <div class="col-span-1"></div>
                 <div class="col-span-2">
-                    <h2 class="text-2xl sm:text-3xl">Conclusion</h2>
-                    <div class="pt-20 pb-30 text-lg text-pretty">
+                    <h2 class="AnAmalgamParadigm_sectionTitle">Conclusion</h2>
+                    <div class="AnAmalgamParadigm_sectionTextWrapper">
                         <p class="indent-8">I interpret this thesis as the result of a process of sedimentation, emerging from the accumulation and agglomeration of personal experiences and knowledge, scientific research and philosophical interpretations; as well as mediated by a cyclical interchange of real and metaphysical interpretations of phenomena that have defined its narrative form. Thus, the value of this thesis arises from the emergent properties of the research agglomerate itself, from the interrelation of its parts.</p>
                         <p class="indent-8">This investigation is not only intended to play on the posthumanist level of analysis, rather it works on three levels of exploration of the capacities of the aggregate. The geological agglomerate and its ability to act as vibrating matter, and thus emerge in alternative forms to the “passive” mineral aggregate; showing interaction capacities with and within organisms, abilities to move below the human perceptual threshold in the lithogenic cycle and exchange with other spheres of Gaia. The potential of the porous edges of interdisciplinary aggregates in promoting alternative perspectives that result in new scientific models; and that stems from the application of the systemic paradigm on a disciplinary level. The studies that have fuelled the research on the case study of inorganic aggregates are for the most part disciplinary crosses, hybrids between vertical fields of study. And the thesis itself as an aggregate of knowledge, mediated by personal experiences and nourished by isomorphisms capable of relating the author, the reader and the subject matter.</p>
                         <p class="indent-8">Within this multilayer frame, the lithogenic cycle act, indeed as case study; the lenses through which to put into perspective the properties of aggregates and the value of the relations between parts. Using as a research reference a process capable of generating and guiding the transformation of agglomerates supports the value for a systemic view of entities, and thus aware of the capabilities of relations and aggregates.</p>
@@ -303,16 +310,16 @@
             </section>
 
             <!--BIBLIOGRAPHY-->
-            <section id="bibliography" class="grid sm:grid-cols-4 py-20">
+            <section id="bibliography" main-data-title="AN AMALGAM PARADIGM" data-title="BIBLIOGRAPHY" class="AnAmalgamParadigm_sectionWrapper py-20">
                 <div class="col-span-1"></div>
                 <div class="col-span-2">
-                    <h2 class="text-2xl sm:text-3xl">Bibliography</h2>
+                    <h2 class="AnAmalgamParadigm_sectionTitle">Bibliography</h2>
                     <div class="grid grid-cols-2 gap-3 py-5 text-sm">
                         
                         <!--BOOKS & IMAGES-->
                         <div class="col-span-1">
                             <h3 class="pb-5">BOOKS & IMAGES</h3>
-                            <div class="overflow-y-auto h-[60vh] pl-8">
+                            <div class="AnAmalgamParadigm_biblioraphy_sectionWrapper">
                             <p class="-indent-8">Bennett, Jane. Vibrant Matter: A Political Ecology of Things. Durham: Duke University Press, 2010.</p>
                             <br>
                             <p class="-indent-8">Caillois, Roger. The Writing of Stones. Charlottesville: University Press of Virginia, 1985.</p>
@@ -358,7 +365,7 @@
                         <!--ARTICLES-->
                         <div class="col-span-1">
                             <h3 class="pb-5">ARTICLES</h3>
-                            <div class="overflow-y-auto h-[60vh] pl-8 text-wrap wrap-break-word">
+                            <div class="AnAmalgamParadigm_biblioraphy_sectionWrapper">
                             <p class="-indent-8">Addadi, Lia, and Stephen Weiner. ‘Control and Design Principles in Biological Mineralization’. Angewandte Chemie International Edition in English 31, no. 2 (February 1992): 153–69. https://doi.org/10.1002/anie.199201531.</p>
                             <br>
                             <p class="-indent-8">Bottjer, David J. ‘Geobiology and Palaeogenomics’. Earth-Science Reviews 164 (January 2017): 182–92. https://doi.org/10.1016/j.earscirev.2016.10.006.</p>
@@ -412,11 +419,11 @@
             </section>
 
             <!--AKNOWLEDGMENTS-->
-            <section id="aknowledgments" class="grid sm:grid-cols-4 py-20">
+            <section id="aknowledgments" main-data-title="AN AMALGAM PARADIGM" data-title="AKNOWLEDGMENTS" class="AnAmalgamParadigm_sectionWrapper py-20">
                 <div class="col-span-1"></div>
                 <div class="col-span-2">
-                    <h2 class="text-2xl sm:text-3xl">Aknowledgments</h2>
-                    <div class="pt-20 pb-30 text-lg text-pretty">
+                    <h2 class="AnAmalgamParadigm_sectionTitle">Aknowledgments</h2>
+                    <div class="AnAmalgamParadigm_sectionTextWrapper">
                         <p class="indent-8">Lastly, thanks to all the people who directly and indirectly fed, challenged and contributed shaping this amalgam.</p>
                         <br>
                         <p class="indent-8">Thanks to the tutors, editors and heads of the GEO—DESIGN department for their guidance. Thanks to my colleagues who shared with me an emotional and unforgettable journey. Thanks to my friends for always being there. And special thanks to my family Annalisa and Flavio for their unconditional love and trust; and to Federica and Sandro for being and having always been a source of inspiration.</p>
@@ -426,7 +433,7 @@
             </section>
 
             <!--COLOPHON-->
-            <section id="colophon" class="grid sm:grid-cols-4">
+            <section id="colophon" main-data-title="AN AMALGAM PARADIGM" class="AnAmalgamParadigm_sectionWrapper">
                 <div class="col-span-1"></div>
                 <div class="col-span-2">
                     <div class="pt-20 pb-0 text-sm text-center text-pretty">
@@ -448,16 +455,13 @@
     <!--FOOTER-->
     <footer>
         <!--desktop-->
-        <div class="hidden sm:block text-sm sm:text-xs">
+        <div class="hidden sm:block fixed w-full bottom-0 left-0 p-3 text-sm sm:text-xs">
             <div class="pt-10 grid grid-cols-5 gap-1">
                 <div class="col-span-1">
-                    <p>© 2025 Alessio Pinton</p>
                 </div>
                 <div class="col-span-1"></div>
                 <div class="col-span-1"></div>
-                <div class="col-span-1">
-                    <a href="mailto:alessiopinton97@outlook.com" rel="mailto">alessiopinton97@outlook.com</a>
-                </div>
+                <div class="col-span-1"></div>
                 <div class="col-span-1 text-right">
                     <button class="theme-toggle">SWITCH MODE</button>
                 </div>
@@ -530,6 +534,65 @@
         })
     })
     
+    </script>
+
+    <!--Main section observer mobile-->
+    <script>
+        {
+    const mainHeaderName = document.querySelectorAll('.main-header-name');
+    const mainSections = document.querySelectorAll('section[main-data-title]');
+    
+    const mainObserverOptions = {
+        root: null,
+        rootMargin: "-50% 0px -50% 0px",
+        threshold: 0
+        };
+        
+        const mainObserver = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    const newTitle = entry.target.getAttribute('main-data-title');
+                    // Cambia il testo con il valore dell'attributo data-title
+                   document.querySelectorAll('.main-header-name').forEach(el => {
+                    el.textContent = newTitle;
+                   });
+                }
+            });
+        }, mainObserverOptions);
+        
+        mainSections.forEach(section => mainObserver.observe(section));
+}
+    </script>
+
+    <!--Chapter section observer-->
+    <script>
+        {
+    const headerName = document.getElementById('header-name');
+    const sections = document.querySelectorAll('section[data-title]');
+    
+    const observerOptions = {
+        root: null,
+        rootMargin: "-50% 0px -50% 0px",
+        threshold: 0
+        };
+        
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    // Cambia il testo con il valore dell'attributo data-title
+                    headerName.textContent = entry.target.getAttribute('data-title');
+
+                    // Cambia l'href puntando all'id della sezione (es. #ch1)
+                    const sectionId = entry.target.getAttribute('id');
+                    if (sectionId) {
+                        headerName.setAttribute('href', `#${sectionId}`);
+                    }
+                }
+            });
+        }, observerOptions);
+        
+        sections.forEach(section => observer.observe(section));
+        }
     </script>
 
 </body>
