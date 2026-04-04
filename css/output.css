@@ -214,14 +214,8 @@
   .top-3 {
     top: calc(var(--spacing) * 3);
   }
-  .bottom-0 {
-    bottom: calc(var(--spacing) * 0);
-  }
   .bottom-3 {
     bottom: calc(var(--spacing) * 3);
-  }
-  .left-0 {
-    left: calc(var(--spacing) * 0);
   }
   .col-span-1 {
     grid-column: span 1 / span 1;
@@ -351,9 +345,6 @@
   .py-20 {
     padding-block: calc(var(--spacing) * 20);
   }
-  .py-40 {
-    padding-block: calc(var(--spacing) * 40);
-  }
   .pt-1 {
     padding-top: calc(var(--spacing) * 1);
   }
@@ -378,6 +369,9 @@
   .pb-30 {
     padding-bottom: calc(var(--spacing) * 30);
   }
+  .pb-40 {
+    padding-bottom: calc(var(--spacing) * 40);
+  }
   .text-center {
     text-align: center;
   }
@@ -390,8 +384,15 @@
   .-indent-8 {
     text-indent: calc(var(--spacing) * -8);
   }
+  .indent-2 {
+    text-indent: calc(var(--spacing) * 2);
+  }
   .indent-8 {
     text-indent: calc(var(--spacing) * 8);
+  }
+  .text-2xl {
+    font-size: var(--text-2xl);
+    line-height: var(--tw-leading, var(--text-2xl--line-height));
   }
   .text-3xl {
     font-size: var(--text-3xl);
@@ -413,9 +414,16 @@
   .text-neutral-400 {
     color: var(--color-neutral-400);
   }
+  .mix-blend-difference {
+    mix-blend-mode: difference;
+  }
   .shadow {
     --tw-shadow: 0 1px 3px 0 var(--tw-shadow-color, rgb(0 0 0 / 0.1)), 0 1px 2px -1px var(--tw-shadow-color, rgb(0 0 0 / 0.1));
     box-shadow: var(--tw-inset-shadow), var(--tw-inset-ring-shadow), var(--tw-ring-offset-shadow), var(--tw-ring-shadow), var(--tw-shadow);
+  }
+  .grayscale {
+    --tw-grayscale: grayscale(100%);
+    filter: var(--tw-blur,) var(--tw-brightness,) var(--tw-contrast,) var(--tw-grayscale,) var(--tw-hue-rotate,) var(--tw-invert,) var(--tw-saturate,) var(--tw-sepia,) var(--tw-drop-shadow,);
   }
   .transition {
     transition-property: color, background-color, border-color, outline-color, text-decoration-color, fill, stroke, --tw-gradient-from, --tw-gradient-via, --tw-gradient-to, opacity, box-shadow, transform, translate, scale, rotate, filter, -webkit-backdrop-filter, backdrop-filter, display, content-visibility, overlay, pointer-events;
@@ -481,6 +489,12 @@
   .sm\:text-right {
     @media (width >= 40rem) {
       text-align: right;
+    }
+  }
+  .sm\:text-3xl {
+    @media (width >= 40rem) {
+      font-size: var(--text-3xl);
+      line-height: var(--tw-leading, var(--text-3xl--line-height));
     }
   }
   .sm\:text-5xl {
@@ -696,8 +710,18 @@
     }
   }
   .AnAmalgamParadigm_sectionTitle {
+    position: sticky;
+    top: calc(var(--spacing) * 12);
+    text-indent: calc(var(--spacing) * 2);
     font-size: var(--text-2xl);
     line-height: var(--tw-leading, var(--text-2xl--line-height));
+    color: var(--color-white);
+    mix-blend-mode: difference;
+    --tw-grayscale: grayscale(100%);
+    filter: var(--tw-blur,) var(--tw-brightness,) var(--tw-contrast,) var(--tw-grayscale,) var(--tw-hue-rotate,) var(--tw-invert,) var(--tw-saturate,) var(--tw-sepia,) var(--tw-drop-shadow,);
+    @media (width >= 40rem) {
+      top: calc(var(--spacing) * 3);
+    }
     @media (width >= 40rem) {
       font-size: var(--text-3xl);
       line-height: var(--tw-leading, var(--text-3xl--line-height));
@@ -843,14 +867,6 @@ summary {
   inherits: false;
   initial-value: 0 0 #0000;
 }
-@property --tw-duration {
-  syntax: "*";
-  inherits: false;
-}
-@property --tw-ease {
-  syntax: "*";
-  inherits: false;
-}
 @property --tw-blur {
   syntax: "*";
   inherits: false;
@@ -904,6 +920,14 @@ summary {
   syntax: "*";
   inherits: false;
 }
+@property --tw-duration {
+  syntax: "*";
+  inherits: false;
+}
+@property --tw-ease {
+  syntax: "*";
+  inherits: false;
+}
 @property --tw-leading {
   syntax: "*";
   inherits: false;
@@ -935,8 +959,6 @@ summary {
       --tw-ring-offset-width: 0px;
       --tw-ring-offset-color: #fff;
       --tw-ring-offset-shadow: 0 0 #0000;
-      --tw-duration: initial;
-      --tw-ease: initial;
       --tw-blur: initial;
       --tw-brightness: initial;
       --tw-contrast: initial;
@@ -950,6 +972,8 @@ summary {
       --tw-drop-shadow-color: initial;
       --tw-drop-shadow-alpha: 100%;
       --tw-drop-shadow-size: initial;
+      --tw-duration: initial;
+      --tw-ease: initial;
       --tw-leading: initial;
       --tw-border-style: solid;
     }
