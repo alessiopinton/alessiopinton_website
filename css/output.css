@@ -19,11 +19,17 @@
     --text-sm--line-height: calc(1.25 / 0.875);
     --text-lg: 1.125rem;
     --text-lg--line-height: calc(1.75 / 1.125);
+    --text-xl: 1.25rem;
+    --text-xl--line-height: calc(1.75 / 1.25);
+    --text-2xl: 1.5rem;
+    --text-2xl--line-height: calc(2 / 1.5);
     --text-3xl: 1.875rem;
     --text-3xl--line-height: calc(2.25 / 1.875);
     --text-5xl: 3rem;
     --text-5xl--line-height: 1;
     --text-6xl: 3.75rem;
+    --text-7xl: 4.5rem;
+    --text-7xl--line-height: 1;
     --ease-in-out: cubic-bezier(0.4, 0, 0.2, 1);
     --default-transition-duration: 150ms;
     --default-transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
@@ -246,12 +252,6 @@
   .h-\[70vh\] {
     height: 70vh;
   }
-  .h-\[80vh\] {
-    height: 80vh;
-  }
-  .h-\[100vh\] {
-    height: 100vh;
-  }
   .max-h-\[30vh\] {
     max-height: 30vh;
   }
@@ -287,9 +287,6 @@
   }
   .grid-cols-3 {
     grid-template-columns: repeat(3, minmax(0, 1fr));
-  }
-  .grid-cols-4 {
-    grid-template-columns: repeat(4, minmax(0, 1fr));
   }
   .grid-cols-5 {
     grid-template-columns: repeat(5, minmax(0, 1fr));
@@ -339,8 +336,8 @@
   .bg-white {
     background-color: var(--color-white);
   }
-  .bg-\[url\(\/img\/AnAmalgamParadigm\/Publication\/publication_cover\.png\)\] {
-    background-image: url(/img/AnAmalgamParadigm/Publication/publication_cover.png);
+  .bg-cover {
+    background-size: cover;
   }
   .bg-center {
     background-position: center;
@@ -423,13 +420,17 @@
   .indent-8 {
     text-indent: calc(var(--spacing) * 8);
   }
+  .text-2xl {
+    font-size: var(--text-2xl);
+    line-height: var(--tw-leading, var(--text-2xl--line-height));
+  }
   .text-3xl {
     font-size: var(--text-3xl);
     line-height: var(--tw-leading, var(--text-3xl--line-height));
   }
-  .text-6xl\/12 {
-    font-size: var(--text-6xl);
-    line-height: calc(var(--spacing) * 12);
+  .text-7xl {
+    font-size: var(--text-7xl);
+    line-height: var(--tw-leading, var(--text-7xl--line-height));
   }
   .text-lg {
     font-size: var(--text-lg);
@@ -442,13 +443,6 @@
   .text-xs {
     font-size: var(--text-xs);
     line-height: var(--tw-leading, var(--text-xs--line-height));
-  }
-  .text-\[9rem\] {
-    font-size: 9rem;
-  }
-  .leading-30 {
-    --tw-leading: calc(var(--spacing) * 30);
-    line-height: calc(var(--spacing) * 30);
   }
   .text-pretty {
     text-wrap: pretty;
@@ -515,9 +509,24 @@
       display: inline-block;
     }
   }
+  .sm\:h-\[80vh\] {
+    @media (width >= 40rem) {
+      height: 80vh;
+    }
+  }
+  .sm\:grid-cols-4 {
+    @media (width >= 40rem) {
+      grid-template-columns: repeat(4, minmax(0, 1fr));
+    }
+  }
   .sm\:grid-cols-5 {
     @media (width >= 40rem) {
       grid-template-columns: repeat(5, minmax(0, 1fr));
+    }
+  }
+  .sm\:items-center {
+    @media (width >= 40rem) {
+      align-items: center;
     }
   }
   .sm\:py-0 {
@@ -535,16 +544,44 @@
       text-align: right;
     }
   }
+  .sm\:text-3xl {
+    @media (width >= 40rem) {
+      font-size: var(--text-3xl);
+      line-height: var(--tw-leading, var(--text-3xl--line-height));
+    }
+  }
   .sm\:text-5xl {
     @media (width >= 40rem) {
       font-size: var(--text-5xl);
       line-height: var(--tw-leading, var(--text-5xl--line-height));
     }
   }
+  .sm\:text-6xl\/12 {
+    @media (width >= 40rem) {
+      font-size: var(--text-6xl);
+      line-height: calc(var(--spacing) * 12);
+    }
+  }
   .sm\:text-xs {
     @media (width >= 40rem) {
       font-size: var(--text-xs);
       line-height: var(--tw-leading, var(--text-xs--line-height));
+    }
+  }
+  .sm\:text-\[9rem\] {
+    @media (width >= 40rem) {
+      font-size: 9rem;
+    }
+  }
+  .sm\:leading-30 {
+    @media (width >= 40rem) {
+      --tw-leading: calc(var(--spacing) * 30);
+      line-height: calc(var(--spacing) * 30);
+    }
+  }
+  .sm\:text-pretty {
+    @media (width >= 40rem) {
+      text-wrap: pretty;
     }
   }
   .dark\:border-none {
@@ -737,10 +774,6 @@ summary {
   inherits: false;
   initial-value: solid;
 }
-@property --tw-leading {
-  syntax: "*";
-  inherits: false;
-}
 @property --tw-shadow {
   syntax: "*";
   inherits: false;
@@ -814,6 +847,10 @@ summary {
   syntax: "*";
   inherits: false;
 }
+@property --tw-leading {
+  syntax: "*";
+  inherits: false;
+}
 @property --tw-blur {
   syntax: "*";
   inherits: false;
@@ -876,7 +913,6 @@ summary {
       --tw-skew-x: initial;
       --tw-skew-y: initial;
       --tw-border-style: solid;
-      --tw-leading: initial;
       --tw-shadow: 0 0 #0000;
       --tw-shadow-color: initial;
       --tw-shadow-alpha: 100%;
@@ -893,6 +929,7 @@ summary {
       --tw-ring-offset-shadow: 0 0 #0000;
       --tw-duration: initial;
       --tw-ease: initial;
+      --tw-leading: initial;
       --tw-blur: initial;
       --tw-brightness: initial;
       --tw-contrast: initial;
