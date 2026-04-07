@@ -96,7 +96,7 @@
     @apply grid sm:grid-cols-4;
   }
   .AnAmalgamParadigm_sectionTitle{
-    @apply sticky top-12 sm:top-3 mix-blend-difference text-white grayscale text-2xl sm:text-5xl indent-2;
+    @apply sticky top-12 sm:top-3 mix-blend-difference [-webkit-text-stroke:2px_white] text-white grayscale text-2xl sm:text-3xl indent-2;
   }
   .AnAmalgamParadigm_sectionTextWrapper{
     @apply pt-20 pb-30 text-lg text-pretty;
