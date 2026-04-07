@@ -28,6 +28,7 @@
     --text-6xl: 3.75rem;
     --text-7xl: 4.5rem;
     --text-7xl--line-height: 1;
+    --drop-shadow-xl: 0 9px 7px rgb(0 0 0 / 0.1);
     --ease-in-out: cubic-bezier(0.4, 0, 0.2, 1);
     --default-transition-duration: 150ms;
     --default-transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
@@ -719,8 +720,8 @@
     font-size: var(--text-2xl);
     line-height: var(--tw-leading, var(--text-2xl--line-height));
     color: var(--color-white);
+    mix-blend-mode: difference;
     --tw-grayscale: grayscale(100%);
-    --tw-invert: invert(100%);
     filter: var(--tw-blur,) var(--tw-brightness,) var(--tw-contrast,) var(--tw-grayscale,) var(--tw-hue-rotate,) var(--tw-invert,) var(--tw-saturate,) var(--tw-sepia,) var(--tw-drop-shadow,);
     @media (width >= 40rem) {
       top: calc(var(--spacing) * 3);
