@@ -668,6 +668,8 @@
     justify-content: center;
     background-size: cover;
     background-position: center;
+    text-align: center;
+    color: var(--color-white);
     @media (width >= 48rem) {
       margin-top: calc(var(--spacing) * 0);
     }
@@ -678,12 +680,10 @@
   }
   .AnAmalgamParadigm_title {
     padding-bottom: calc(var(--spacing) * 10);
-    text-align: center;
     font-size: var(--text-6xl);
     line-height: var(--tw-leading, var(--text-6xl--line-height));
     --tw-leading: calc(var(--spacing) * 14);
     line-height: calc(var(--spacing) * 14);
-    color: var(--color-white);
     mix-blend-mode: difference;
     @media (width >= 40rem) {
       text-wrap: pretty;
@@ -705,12 +705,10 @@
   }
   .AnAmalgamParadigm_subtitle {
     padding-bottom: calc(var(--spacing) * 10);
-    text-align: center;
     font-size: var(--text-4xl);
     line-height: var(--tw-leading, var(--text-4xl--line-height));
     --tw-leading: calc(var(--spacing) * 9);
     line-height: calc(var(--spacing) * 9);
-    color: var(--color-white);
     mix-blend-mode: difference;
     @media (width >= 48rem) {
       max-width: 60vw;
