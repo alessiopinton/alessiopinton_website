@@ -55,12 +55,16 @@
         <section id="title" main-data-title="ALESSIO PINTON" class="AnAmalgamParadigm_title-wrapper">
             <div class="p-10 items-center">
                 <div>
-                    <h2 id="title-movement" class="AnAmalgamParadigm_title">AN AMALGAM PARADIGM</h2>
-                    <p id="subtitle-movement" class="AnAmalgamParadigm_subtitle">for an embodied practice of empathy with an inorganic aggregates ecosystem</p>
+                    <h2 class="AnAmalgamParadigm_title">AN AMALGAM PARADIGM</h2>
+                    <p class="AnAmalgamParadigm_subtitle">for an embodied practice of empathy with an inorganic aggregates ecosystem</p>
                 </div>
             </div>
         </section>
-
+        
+        <!--MOBILE LIGHT/DARK BUTTON-->
+        <div class="block sm:hidden text-right pt-3">
+            <button class="theme-toggle">SWITCH MODE</button>
+        </div>
 
         <!--CONTENT-->
         <section id="content" class="pt-20 pb-50">
@@ -435,7 +439,7 @@
             <section id="colophon" main-data-title="AN AMALGAM PARADIGM" class="AnAmalgamParadigm_sectionWrapper">
                 <div class="col-span-1"></div>
                 <div class="col-span-2">
-                    <div class="pt-20 pb-0 text-sm text-center text-pretty">
+                    <div class="py-15 text-sm text-center text-pretty">
                         <span>AN AMALGAM PARADIGM<br>Alessio Pinton</span>
                         <br><br>
                         <span>EDITORS<br>Nadine Botha, Ben Shai van der Wal</span>
@@ -449,12 +453,12 @@
             </section>
 
         </section>
+
     </main>
 
     <!--FOOTER-->
     <footer class="bottom-2 w-full text-center text-sm sm:text-xs">
-        <!--mobile-->
-        <div class="block sm:hidden">
+        <div>
             <p class="pt-1">© 2026 Alessio Pinton</p>
         </div>
     </footer>
@@ -537,28 +541,6 @@
         
         mainSections.forEach(section => mainObserver.observe(section));
 }
-    </script>
-
-    <!--Title movement-->
-    <script>
-    window.addEventListener('scroll', function() {
-        const target = document.getElementById('title-movement');
-        // Adjust '0.3' to change the speed (lower = slower/deeper perspective)
-        let scrolled = window.pageYOffset;
-        target.style.transform = 'translateY(' + (scrolled * 0.2) + 'px)';
-    });
-    
-    </script>
-
-    <!--Subtitle movement-->
-    <script>
-    window.addEventListener('scroll', function() {
-        const target = document.getElementById('subtitle-movement');
-        // Adjust '0.3' to change the speed (lower = slower/deeper perspective)
-        let scrolled = window.pageYOffset;
-        target.style.transform = 'translateY(' + (scrolled * 0.2) + 'px)';
-    });
-    
     </script>
 
 </body>
