@@ -5,7 +5,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>An Amalgam Paradigm</title>
     <meta name="description" content="An interdisciplinary cluster, a process of sedimentation, but also an aggregate with emergent properties - An Amalgam Paradigm is a publication that traces in the boundaries between disciplines the unearthed potential for new ways of understanding the world. In exposing a hierarchical system of understanding reality, the writing proposes a systemic and empathic vision to living and non-living entities.">
-<meta name="google-site-verification" content="n97NVipoC2tTGhOGhyBrVKZUMqAVS4c6cWWfOi_6uAc" />
     <!-- Tailwind darkmode user listener -->
     <script>
     if (
@@ -56,8 +55,8 @@
         <section id="title" main-data-title="ALESSIO PINTON" class="AnAmalgamParadigm_title-wrapper">
             <div class="p-10 items-center">
                 <div>
-                    <h2 class="AnAmalgamParadigm_title">An Amalgam Paradigm</h2>
-                    <span class="AnAmalgamParadigm_subtitle">for an embodied practice of empathy with an inorganic aggregates ecosystem</span>
+                    <h2 id="title-movement" class="AnAmalgamParadigm_title">An<br>Amalgam<br>Paradigm</h2>
+                    <p id="subtitle-movement" class="AnAmalgamParadigm_subtitle">for an embodied practice of empathy with an inorganic aggregates ecosystem</p>
                 </div>
             </div>
         </section>
@@ -538,6 +537,28 @@
         
         mainSections.forEach(section => mainObserver.observe(section));
 }
+    </script>
+
+    <!--Title movement-->
+    <script>
+    window.addEventListener('scroll', function() {
+        const target = document.getElementById('title-movement');
+        // Adjust '0.3' to change the speed (lower = slower/deeper perspective)
+        let scrolled = window.pageYOffset;
+        target.style.transform = 'translateY(' + (scrolled * 0.2) + 'px)';
+    });
+    
+    </script>
+
+    <!--Subtitle movement-->
+    <script>
+    window.addEventListener('scroll', function() {
+        const target = document.getElementById('subtitle-movement');
+        // Adjust '0.3' to change the speed (lower = slower/deeper perspective)
+        let scrolled = window.pageYOffset;
+        target.style.transform = 'translateY(' + (scrolled * 0.1) + 'px)';
+    });
+    
     </script>
 
 </body>
