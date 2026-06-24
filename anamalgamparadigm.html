@@ -545,18 +545,30 @@
     </script>
 
     <script>
-        (function () {
-  console.log('script partito');
-
+(function () {
   const section = document.querySelector('.AnAmalgamParadigm_title-wrapper');
-  console.log('section:', section);
-
-  if (!section) return;
-
   const style = window.getComputedStyle(section);
-  console.log('background-image attuale:', style.backgroundImage);
-})();
-    </script>
+  
+  // Estrae l'URL dal computed style
+  const bgUrl = style.backgroundImage.slice(5, -2);
+  console.log('url estratto:', bgUrl);
+
+  fetch(bgUrl)
+    .then(res => {
+      console.log('fetch ok, status:', res.status);
+      return res.blob();
+    })
+    .then(blob => {
+      console.log('blob ricevuto, size:', blob.size);
+      const blobUrl = URL.createObjectURL(blob);
+      const img = new Image();
+      img.src = blobUrl;
+      img.onload = function () {
+        console.log('img caricata:', img.naturalWidth, img.naturalHeight);
+      };
+    })
+    .catch(err => console.error('errore:', err));
+})();    </script>
 
 </body>
 </html>
