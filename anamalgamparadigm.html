@@ -544,5 +544,19 @@
 }
     </script>
 
+    <script>
+        (function () {
+  console.log('script partito');
+
+  const section = document.querySelector('.AnAmalgamParadigm_title-wrapper');
+  console.log('section:', section);
+
+  if (!section) return;
+
+  const style = window.getComputedStyle(section);
+  console.log('background-image attuale:', style.backgroundImage);
+})();
+    </script>
+
 </body>
 </html>
