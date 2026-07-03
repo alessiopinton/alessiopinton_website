@@ -215,9 +215,6 @@
   .top-3 {
     top: calc(var(--spacing) * 3);
   }
-  .right-0 {
-    right: calc(var(--spacing) * 0);
-  }
   .bottom-2 {
     bottom: calc(var(--spacing) * 2);
   }
@@ -251,17 +248,8 @@
   .hidden {
     display: none;
   }
-  .inline-block {
-    display: inline-block;
-  }
-  .table {
-    display: table;
-  }
   .h-\[70vh\] {
     height: 70vh;
-  }
-  .h-screen {
-    height: 100vh;
   }
   .max-h-\[30vh\] {
     max-height: 30vh;
@@ -284,14 +272,8 @@
   .max-w-full {
     max-width: 100%;
   }
-  .border-collapse {
-    border-collapse: collapse;
-  }
   .transform {
     transform: var(--tw-rotate-x,) var(--tw-rotate-y,) var(--tw-rotate-z,) var(--tw-skew-x,) var(--tw-skew-y,);
-  }
-  .resize {
-    resize: both;
   }
   .grid-cols-1 {
     grid-template-columns: repeat(1, minmax(0, 1fr));
@@ -311,9 +293,6 @@
   .items-center {
     align-items: center;
   }
-  .items-stretch {
-    align-items: stretch;
-  }
   .justify-center {
     justify-content: center;
   }
@@ -325,9 +304,6 @@
   }
   .gap-3 {
     gap: calc(var(--spacing) * 3);
-  }
-  .self-end {
-    align-self: flex-end;
   }
   .truncate {
     overflow: hidden;
@@ -342,10 +318,6 @@
   }
   .overflow-y-auto {
     overflow-y: auto;
-  }
-  .border {
-    border-style: var(--tw-border-style);
-    border-width: 1px;
   }
   .border-neutral-600 {
     border-color: var(--color-neutral-600);
@@ -380,9 +352,6 @@
   .py-20 {
     padding-block: calc(var(--spacing) * 20);
   }
-  .py-30 {
-    padding-block: calc(var(--spacing) * 30);
-  }
   .pt-1 {
     padding-top: calc(var(--spacing) * 1);
   }
@@ -394,12 +363,6 @@
   }
   .pt-20 {
     padding-top: calc(var(--spacing) * 20);
-  }
-  .pt-70 {
-    padding-top: calc(var(--spacing) * 70);
-  }
-  .pb-0 {
-    padding-bottom: calc(var(--spacing) * 0);
   }
   .pb-3 {
     padding-bottom: calc(var(--spacing) * 3);
@@ -431,12 +394,6 @@
   .indent-8 {
     text-indent: calc(var(--spacing) * 8);
   }
-  .align-bottom {
-    vertical-align: bottom;
-  }
-  .align-middle {
-    vertical-align: middle;
-  }
   .text-2xl {
     font-size: var(--text-2xl);
     line-height: var(--tw-leading, var(--text-2xl--line-height));
@@ -461,19 +418,9 @@
   .text-neutral-400 {
     color: var(--color-neutral-400);
   }
-  .underline {
-    text-decoration-line: underline;
-  }
   .shadow {
     --tw-shadow: 0 1px 3px 0 var(--tw-shadow-color, rgb(0 0 0 / 0.1)), 0 1px 2px -1px var(--tw-shadow-color, rgb(0 0 0 / 0.1));
     box-shadow: var(--tw-inset-shadow), var(--tw-inset-ring-shadow), var(--tw-ring-offset-shadow), var(--tw-ring-shadow), var(--tw-shadow);
-  }
-  .outline {
-    outline-style: var(--tw-outline-style);
-    outline-width: 1px;
-  }
-  .filter {
-    filter: var(--tw-blur,) var(--tw-brightness,) var(--tw-contrast,) var(--tw-grayscale,) var(--tw-hue-rotate,) var(--tw-invert,) var(--tw-saturate,) var(--tw-sepia,) var(--tw-drop-shadow,);
   }
   .transition {
     transition-property: color, background-color, border-color, outline-color, text-decoration-color, fill, stroke, --tw-gradient-from, --tw-gradient-via, --tw-gradient-to, opacity, box-shadow, transform, translate, scale, rotate, filter, -webkit-backdrop-filter, backdrop-filter, display, content-visibility, overlay, pointer-events;
@@ -726,12 +673,32 @@
     @media (width >= 48rem) {
       min-height: 90vh;
     }
-    background-image: url('../img/AnAmalgamParadigm/Publication/publication_cover.png');
+    background-image: url('../img/AnAmalgamParadigm/Publication/publicationCover_light.gif');
+  }
+  .dark .AnAmalgamParadigm_title-wrapper {
+    margin-inline: calc(var(--spacing) * -3);
+    margin-top: calc(var(--spacing) * -20);
+    display: flex;
+    min-height: 100vh;
+    width: 100vw;
+    align-items: center;
+    justify-content: center;
+    background-size: cover;
+    background-position: center;
+    text-align: center;
+    @media (width >= 48rem) {
+      margin-top: calc(var(--spacing) * 0);
+    }
+    @media (width >= 48rem) {
+      min-height: 90vh;
+    }
+    background-image: url('../img/AnAmalgamParadigm/Publication/publicationCover_dark.gif');
   }
   .AnAmalgamParadigm_title {
     font-size: var(--text-4xl);
     line-height: var(--tw-leading, var(--text-4xl--line-height));
-    -webkit-text-stroke: 1px black;
+    color: var(--color-white);
+    -webkit-text-stroke: 1px white;
     @media (width >= 40rem) {
       text-wrap: pretty;
     }
@@ -755,7 +722,8 @@
     line-height: var(--tw-leading, var(--text-2xl--line-height));
     --tw-leading: calc(var(--spacing) * 6);
     line-height: calc(var(--spacing) * 6);
-    -webkit-text-stroke: 1px black;
+    color: var(--color-white);
+    -webkit-text-stroke: 1px white;
     @media (width >= 48rem) {
       max-width: 60vw;
     }
@@ -873,11 +841,6 @@ summary {
   syntax: "*";
   inherits: false;
 }
-@property --tw-border-style {
-  syntax: "*";
-  inherits: false;
-  initial-value: solid;
-}
 @property --tw-shadow {
   syntax: "*";
   inherits: false;
@@ -943,10 +906,13 @@ summary {
   inherits: false;
   initial-value: 0 0 #0000;
 }
-@property --tw-outline-style {
+@property --tw-duration {
   syntax: "*";
   inherits: false;
-  initial-value: solid;
+}
+@property --tw-ease {
+  syntax: "*";
+  inherits: false;
 }
 @property --tw-blur {
   syntax: "*";
@@ -1001,17 +967,14 @@ summary {
   syntax: "*";
   inherits: false;
 }
-@property --tw-duration {
-  syntax: "*";
-  inherits: false;
-}
-@property --tw-ease {
-  syntax: "*";
-  inherits: false;
-}
 @property --tw-leading {
   syntax: "*";
   inherits: false;
+}
+@property --tw-border-style {
+  syntax: "*";
+  inherits: false;
+  initial-value: solid;
 }
 @layer properties {
   @supports ((-webkit-hyphens: none) and (not (margin-trim: inline))) or ((-moz-orient: inline) and (not (color:rgb(from red r g b)))) {
@@ -1021,7 +984,6 @@ summary {
       --tw-rotate-z: initial;
       --tw-skew-x: initial;
       --tw-skew-y: initial;
-      --tw-border-style: solid;
       --tw-shadow: 0 0 #0000;
       --tw-shadow-color: initial;
       --tw-shadow-alpha: 100%;
@@ -1036,7 +998,8 @@ summary {
       --tw-ring-offset-width: 0px;
       --tw-ring-offset-color: #fff;
       --tw-ring-offset-shadow: 0 0 #0000;
-      --tw-outline-style: solid;
+      --tw-duration: initial;
+      --tw-ease: initial;
       --tw-blur: initial;
       --tw-brightness: initial;
       --tw-contrast: initial;
@@ -1050,9 +1013,8 @@ summary {
       --tw-drop-shadow-color: initial;
       --tw-drop-shadow-alpha: 100%;
       --tw-drop-shadow-size: initial;
-      --tw-duration: initial;
-      --tw-ease: initial;
       --tw-leading: initial;
+      --tw-border-style: solid;
     }
   }
 }
