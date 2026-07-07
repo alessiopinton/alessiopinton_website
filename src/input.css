@@ -79,24 +79,24 @@
   }
   .AnAmalgamParadigm_title-wrapper {
     @apply w-screen min-h-[100vh] md:min-h-[90vh] flex items-center justify-center bg-center bg-cover text-center -mx-3 -mt-20 md:mt-0;
-    background-image: url('../img/AnAmalgamParadigm/Publication/publicationCover_light.gif');
+    background-image: url('../img/AnAmalgamParadigm/Publication/publicationCover.gif');
+    background-blend-mode: difference;
   }
 
   .dark .AnAmalgamParadigm_title-wrapper {
-    @apply w-screen min-h-[100vh] md:min-h-[90vh] flex items-center justify-center bg-center bg-cover text-center -mx-3 -mt-20 md:mt-0;
-    background-image: url('../img/AnAmalgamParadigm/Publication/publicationCover_dark.gif');
+    filter: invert(1);
   }
   
   .AnAmalgamParadigm_title {
-    @apply text-4xl text-white md:text-6xl md:max-w-[60vw] [-webkit-text-stroke:1px_white] dark:[-webkit-text-stroke:1px_white] wrap-break-word sm:text-pretty ;
+    @apply text-4xl text-black md:text-6xl md:max-w-[60vw] [-webkit-text-stroke:1px_black] wrap-break-word sm:text-pretty ;
     font-family: 'Redaction', sans-serif;
     font-weight: 20;
     overflow-wrap: break-word;
   }
   .AnAmalgamParadigm_subtitle{
-    @apply text-2xl text-white md:text-4xl md:max-w-[60vw] [-webkit-text-stroke:1px_white] dark:[-webkit-text-stroke:1px_white] leading-6 md:leading-8  pb-10;
+    @apply text-2xl text-black md:text-4xl md:max-w-[60vw] [-webkit-text-stroke:1px_black] leading-6 md:leading-8  pb-10;
     font-family: 'Redaction', sans-serif;
-    font-weight: 50;
+    font-weight: 35;
   }
   .AnAmalgamParadigm_sectionWrapper{
     @apply grid sm:grid-cols-4;
