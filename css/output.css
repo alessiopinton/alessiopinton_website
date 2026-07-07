@@ -673,32 +673,17 @@
     @media (width >= 48rem) {
       min-height: 90vh;
     }
-    background-image: url('../img/AnAmalgamParadigm/Publication/publicationCover_light.gif');
+    background-image: url('../img/AnAmalgamParadigm/Publication/publicationCover.gif');
+    background-blend-mode: difference;
   }
   .dark .AnAmalgamParadigm_title-wrapper {
-    margin-inline: calc(var(--spacing) * -3);
-    margin-top: calc(var(--spacing) * -20);
-    display: flex;
-    min-height: 100vh;
-    width: 100vw;
-    align-items: center;
-    justify-content: center;
-    background-size: cover;
-    background-position: center;
-    text-align: center;
-    @media (width >= 48rem) {
-      margin-top: calc(var(--spacing) * 0);
-    }
-    @media (width >= 48rem) {
-      min-height: 90vh;
-    }
-    background-image: url('../img/AnAmalgamParadigm/Publication/publicationCover_dark.gif');
+    filter: invert(1);
   }
   .AnAmalgamParadigm_title {
     font-size: var(--text-4xl);
     line-height: var(--tw-leading, var(--text-4xl--line-height));
-    color: var(--color-white);
-    -webkit-text-stroke: 1px white;
+    color: var(--color-black);
+    -webkit-text-stroke: 1px black;
     @media (width >= 40rem) {
       text-wrap: pretty;
     }
@@ -708,9 +693,6 @@
     @media (width >= 48rem) {
       font-size: var(--text-6xl);
       line-height: var(--tw-leading, var(--text-6xl--line-height));
-    }
-    &:where(.dark, .dark *) {
-      -webkit-text-stroke: 1px white;
     }
     font-family: 'Redaction', sans-serif;
     font-weight: 20;
@@ -722,8 +704,8 @@
     line-height: var(--tw-leading, var(--text-2xl--line-height));
     --tw-leading: calc(var(--spacing) * 6);
     line-height: calc(var(--spacing) * 6);
-    color: var(--color-white);
-    -webkit-text-stroke: 1px white;
+    color: var(--color-black);
+    -webkit-text-stroke: 1px black;
     @media (width >= 48rem) {
       max-width: 60vw;
     }
@@ -735,11 +717,8 @@
       --tw-leading: calc(var(--spacing) * 8);
       line-height: calc(var(--spacing) * 8);
     }
-    &:where(.dark, .dark *) {
-      -webkit-text-stroke: 1px white;
-    }
     font-family: 'Redaction', sans-serif;
-    font-weight: 50;
+    font-weight: 35;
   }
   .AnAmalgamParadigm_sectionWrapper {
     display: grid;
