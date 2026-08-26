@@ -24,8 +24,8 @@
     
     <link href="https://cdn.jsdelivr.net/npm/flowbite@4.0.1/dist/flowbite.min.css" rel="stylesheet" />
     <link rel="stylesheet" href="./css/output.css">
-<link rel="stylesheet" href="./css/swiper-bundle.min.css" />
-<script src="./js/swiper-bundle.min.js"></script>
+    <link rel="stylesheet" href="./css/swiper-bundle.min.css" />
+    <script src="./js/swiper-bundle.min.js"></script>
 </head>
 
 <body class="p-3 bg-white dark:bg-black text-black dark:text-white" style="font-family: Redaction; font-weight: 50;">
@@ -1500,37 +1500,39 @@
     })
     
     </script>
-<script>
-document.querySelectorAll('details').forEach(function (detailsEl) {
-    let swiperInstance = null;
+    <script>
+    document.querySelectorAll('details').forEach(function (detailsEl) {
+        let swiperInstance = null;
 
-    detailsEl.addEventListener('toggle', function () {
-        if (detailsEl.open && !swiperInstance) {
-            const swiperContainer = detailsEl.querySelector('.marquee-swiper');
+        detailsEl.addEventListener('toggle', function () {
+            console.log("Toggle. Aperto?", detailsEl.open);
 
-            if (swiperContainer) {
+            if (detailsEl.open && !swiperInstance) {
+                const swiperContainer = detailsEl.querySelector('.marquee-swiper');
+                console.log("Container swiper:", swiperContainer);
+                if (!swiperContainer) return;
+
                 swiperInstance = new Swiper(swiperContainer, {
                     slidesPerView: "auto",
-                    loop: false,           // niente più loop infinito: elimina il bug del salto asimmetrico
-                    simulateTouch: false,  // niente drag col mouse
-                    allowTouchMove: true,  // swipe col dito resta attivo su mobile
-                    watchOverflow: true,   // se le immagini stanno tutte a schermo, disattiva la navigazione da sola
+                    loop: false,
+                    simulateTouch: false,
+                    allowTouchMove: true,
+                    watchOverflow: true,
                 });
+                console.log("Swiper creato. Slide totali:", swiperInstance.slides.length);
 
                 const outerWrapper = detailsEl.querySelector('.marquee-wrapper-outer');
+                console.log("Wrapper esterno:", outerWrapper);
+
                 const leftNav = outerWrapper.querySelector('.marquee-nav-left');
                 const rightNav = outerWrapper.querySelector('.marquee-nav-right');
+                console.log("Nav sinistra/destra:", leftNav, rightNav);
 
-                leftNav.addEventListener('click', function () {
-                    swiperInstance.slidePrev();
-                });
-                rightNav.addEventListener('click', function () {
-                    swiperInstance.slideNext();
-                });
+                leftNav.addEventListener('click', () => swiperInstance.slidePrev());
+                rightNav.addEventListener('click', () => swiperInstance.slideNext());
             }
-        }
+        });
     });
-});
-</script>
+    </script>
 </body>
 </html>
