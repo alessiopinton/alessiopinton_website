@@ -833,8 +833,17 @@
 }
 .marquee-swiper .swiper-slide img {
   max-height: 70vh;
+  max-width: 100%;
   width: auto;
   object-fit: contain;
+}
+@media (max-width: 640px) {
+  .marquee-wrapper-outer, .marquee-swiper {
+    height: 45vh;
+  }
+  .marquee-swiper .swiper-slide img {
+    max-height: 45vh;
+  }
 }
 .marquee-nav {
   position: absolute;
@@ -845,11 +854,11 @@
 }
 .marquee-nav-left {
   left: 0;
-  cursor: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="black" stroke-width="2"><path d="M15 18l-6-6 6-6"/></svg>') 16 16, w-resize;
+  cursor: url('../img/utilities/cursor_L.svg') 16 16, w-resize;
 }
 .marquee-nav-right {
   right: 0;
-  cursor: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="black" stroke-width="2"><path d="M9 18l6-6-6-6"/></svg>') 16 16, e-resize;
+  cursor: url('../img/utilities/cursor_R.svg') -16 -16, e-resize;
 }
 a:hover {
   text-decoration-line: underline;
