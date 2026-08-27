@@ -839,10 +839,17 @@
 }
 @media (max-width: 640px) {
   .marquee-wrapper-outer, .marquee-swiper {
-    height: 45vh;
+    height: auto;
+  }
+  .marquee-swiper .swiper-slide {
+    width: 85vw;
+    max-width: 85vw;
+    height: auto;
   }
   .marquee-swiper .swiper-slide img {
-    max-height: 45vh;
+    width: 100%;
+    height: auto;
+    max-height: none;
   }
 }
 .marquee-nav {
