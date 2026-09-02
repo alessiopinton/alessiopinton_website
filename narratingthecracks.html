@@ -330,24 +330,44 @@
             lightboxImg.src = thumbs[currentIndex].src;
             lightboxImg.alt = thumbs[currentIndex].alt;
             lightbox.classList.add('open');
+            document.body.classList.add('lightbox-open');
         }
 
         function closeLightbox() {
             lightbox.classList.remove('open');
+            document.body.classList.remove('lightbox-open');   // <-- aggiunta
+        }
+
+        function changeImage(newIndex, direction) {
+            // direction: 1 = avanti (esce a sinistra, entra da destra), -1 = indietro (viceversa)
+            lightboxImg.style.transform = `translateX(${direction * -40}px)`;
+            lightboxImg.style.opacity = '0';
+
+            setTimeout(function () {
+                currentIndex = newIndex;
+                lightboxImg.src = thumbs[currentIndex].src;
+                lightboxImg.alt = thumbs[currentIndex].alt;
+
+                // riposiziona istantaneamente dal lato opposto, senza transizione visibile
+                lightboxImg.style.transition = 'none';
+                lightboxImg.style.transform = `translateX(${direction * 40}px)`;
+                void lightboxImg.offsetWidth; // forza il browser a "registrare" questa posizione prima di animare
+
+                // ora anima verso il centro
+                lightboxImg.style.transition = 'transform 0.25s ease, opacity 0.25s ease';
+                lightboxImg.style.transform = 'translateX(0)';
+                lightboxImg.style.opacity = '1';
+            }, 250);
         }
 
         function showNext() {
-            currentIndex = (currentIndex + 1) % thumbs.length;
-            lightboxImg.src = thumbs[currentIndex].src;
-            lightboxImg.alt = thumbs[currentIndex].alt;
+            changeImage((currentIndex + 1) % thumbs.length, 1);
         }
 
         function showPrev() {
-            currentIndex = (currentIndex - 1 + thumbs.length) % thumbs.length;
-            lightboxImg.src = thumbs[currentIndex].src;
-            lightboxImg.alt = thumbs[currentIndex].alt;
+            changeImage((currentIndex - 1 + thumbs.length) % thumbs.length, -1);
         }
-
+        
         thumbs.forEach(function (thumb, index) {
             thumb.addEventListener('click', function () {
                 openLightbox(index);
