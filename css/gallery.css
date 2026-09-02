@@ -6,12 +6,17 @@
     align-items: center;
     justify-content: center;
     z-index: 100;
+    touch-action: none;
 }
 html.dark .lightbox {
     background: rgba(0, 0, 0, 0.92);
 }
 .lightbox.open {
     display: flex;
+}
+body.lightbox-open {
+    overflow: hidden;
+    height: 100vh;
 }
 .lightbox img {
     max-width: 85vw;
@@ -43,12 +48,18 @@ html.dark .lightbox {
 }
 .lightbox-prev { left: 10px; }
 .lightbox-next { right: 10px; }
+
 html.dark .lightbox-close,
 html.dark .lightbox-nav {
     color: white;
 }
+
 @media (hover: none) and (pointer: coarse) {
     .lightbox-nav {
         display: none;
     }
+}
+
+#lightbox-img {
+    transition: transform 0.25s ease, opacity 0.25s ease;
 }
