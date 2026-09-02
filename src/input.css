@@ -35,20 +35,24 @@
 }
 
 @layer components {
+
+  /*Homepage*/
   .About-wrapper {
-    @apply grid grid-cols-6 pt-0 sm:pt-5 h-[60vh] sm:h-[80vh] overflow-y-auto;
+    @apply grid grid-cols-6 pt-0 sm:pt-5 h-[60vh] sm:h-[75vh] overflow-y-auto;
     scrollbar-width: none; /* Firefox */
   }
   .About-wrapper::-webkit-scrollbar {
   display: none; /* Chrome, Edge, Safari */
   }
   .InfoColumn-wrapper {
-    @apply col-span-1 break-words h-[80vh] overflow-y-auto;
+    @apply col-span-1 break-words h-[75vh] overflow-y-auto;
     scrollbar-width: none; /* Firefox */
   }
   .InfoColumn-wrapper::-webkit-scrollbar {
     display: none; /* Chrome, Edge, Safari */
   }
+
+  /*Project modules*/
   .ProjectOverview-wrapper {
     @apply grid grid-cols-2 sm:grid-cols-5 gap-2 pt-1 pb-5;
   }
@@ -76,17 +80,17 @@
   }
   .ProjectExtLinks-content-column::-webkit-scrollbar {
     display: none; /* Chrome, Edge, Safari */
-  }
+  }    
+
+  /*An Amalgam Paradigm publication*/
   .AnAmalgamParadigm_title-wrapper {
     @apply w-screen min-h-[100vh] md:min-h-[90vh] flex items-center justify-center bg-center bg-cover text-center -mx-3 -mt-20 md:mt-0;
     background-image: url('../img/AnAmalgamParadigm/Publication/publicationCover.gif');
     background-blend-mode: difference;
   }
-
   .dark .AnAmalgamParadigm_title-wrapper {
     filter: invert(1);
   }
-  
   .AnAmalgamParadigm_title {
     @apply text-4xl text-black md:text-6xl md:max-w-[60vw] [-webkit-text-stroke:1px_black] wrap-break-word sm:text-pretty ;
     font-family: 'Redaction', sans-serif;
