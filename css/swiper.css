@@ -1,12 +1,13 @@
-/*Gallery*/
 .marquee-wrapper-outer {
     position: relative;
     width: 100%;
-    height: 70vh;
+    /* niente più height qui: si adatta al contenuto, che sotto sarà comunque
+       vincolato a 70vh da .marquee-swiper — un solo posto dove questo valore
+       viene dichiarato, invece di tre */
 }
 .marquee-swiper {
     width: 100%;
-    height: 100%;
+    height: 70vh;
     overflow: hidden;
 }
 .marquee-swiper .swiper-slide {
@@ -18,36 +19,10 @@
     margin-right: 4px;
 }
 .marquee-swiper .swiper-slide img {
-    max-height: 70vh;
-    max-width: 100%;   /* <-- aggiunta: non superare mai la larghezza del contenitore */
+    max-height: 100%;
+    max-width: 100%;
     width: auto;
     object-fit: contain;
-}
-@media (hover: none) and (pointer: coarse) {
-    .marquee-nav {
-        display: none;
-    }
-}
-@media (max-width: 640px) {
-    /* il contenitore non ha più un'altezza fissa in vh: si adatta al contenuto */
-    .marquee-wrapper-outer,
-    .marquee-swiper {
-        height: auto;
-    }
-
-    /* le slide sono larghe una percentuale fissa dello schermo, altezza libera */
-    .marquee-swiper .swiper-slide {
-        width: 100vw;
-        max-width: 100vw;
-        height: auto;
-    }
-
-    /* l'immagine riempie la larghezza della slide, l'altezza segue le proporzioni naturali */
-    .marquee-swiper .swiper-slide img {
-        width: 100%;
-        height: auto;
-        max-height: none;
-    }
 }
 .marquee-nav {
     position: absolute;
@@ -63,4 +38,29 @@
 .marquee-nav-right {
     right: 0;
     cursor: url('../img/utilities/cursor_R.svg') 16 16, e-resize;
+}
+
+/* mobile: layout a larghezza piena, altezza libera in base alle proporzioni dell'immagine */
+@media (max-width: 640px) {
+    .marquee-wrapper-outer,
+    .marquee-swiper {
+        height: auto;
+    }
+    .marquee-swiper .swiper-slide {
+        width: 100vw;
+        max-width: 100vw;
+        height: auto;
+    }
+    .marquee-swiper .swiper-slide img {
+        width: 100%;
+        height: auto;
+        max-height: none;
+    }
+}
+
+/* dispositivi touch: via le zone cliccabili, resta solo lo swipe nativo */
+@media (hover: none) and (pointer: coarse) {
+    .marquee-nav {
+        display: none;
+    }
 }
