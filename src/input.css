@@ -38,7 +38,7 @@
 
   /*Homepage*/
   .About-wrapper {
-    @apply grid grid-cols-6 pt-0 sm:pt-5 h-[60vh] sm:h-[75vh] overflow-y-auto;
+    @apply grid grid-cols-5 sm:h-[75vh] overflow-y-auto;
     scrollbar-width: none; /* Firefox */
   }
   .About-wrapper::-webkit-scrollbar {
